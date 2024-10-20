@@ -1,0 +1,122 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(var(--section-padding) / 6) var(--section-padding);
+    gap: 24px;
+    
+    /*
+    color: #131313;
+    background-color: whitesmoke;
+    box-shadow: inset 0px 8px 16px -6px #000, inset 0px -8px 16px -6px #000;
+    */
+
+    
+    color: whitesmoke;
+    background-color: var(--cwo-black);
+
+    background-color: #2B2B2B;
+    box-shadow: inset 0px 8px 16px -6px #000, inset 0px -8px 16px -6px #000;
+}
+
+.categories-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.categories-select {
+    flex-basis: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 64px;
+}
+
+.categories-select ul {
+    display: flex;
+    gap: 28px;
+}
+
+.categories-select li {
+    list-style-type: none;
+    width: max-content;
+    display: inline-block;
+    position: relative;
+    transition: all .2s linear;
+    
+    font-size: 1.4vw;
+    font-weight: 400;
+    line-height: 1.6vw;
+}
+
+.categories-select li:hover {
+    cursor: pointer;
+}
+  
+.categories-select li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #00c2ff;
+    transition: transform 0.25s ease-out;
+    transform-origin: bottom center;
+}
+
+.categories-select li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+.categories-select li.active {
+    color: #00c2ff;
+}
+
+.categories-content {
+    flex-basis: 67%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories-definition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    box-sizing: border-box;
+    padding: 24px;
+    border-radius: 12px;
+    /*
+        border: 4px solid #424242;
+        border: 3px solid var(--cwo-black);
+    */
+    font-size: 1.2vw;
+
+}
+
+.categories-definition p {
+    text-align: center;
+}
+
+
+.categories-definition ol {
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-definition ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+.categories-definition ul li {
+    list-style-type: none;
+}
+*/

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  overscroll-behavior: none;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --section-padding: 128px;
+  --section-padding: 358px;
+  --cwo-black: #131313;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #131313;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+button{
+  all: unset;
+
+  border: 2.5px solid #0491C1;
+  background: linear-gradient(60deg, #086082, #00c2ff);
+  color: #fff;
+  
+  background-position: middle;
+  background-size: 100% 100%;
+  transition: all .5s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  background-size: 2500% 100%;
+  background-position: right bottom;
+  scale: 1.01;
+}
+
+button a {
+  all: unset;
+}
+
+.blue-text {
+  -webkit-text-fill-color: #0000;
+  animation: textclip 8s linear infinite;
+  background: linear-gradient(45deg, #086082, #00c2ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #086082, #00c2ff 50%, #086082);
+  background-size: 200% auto;
+}
+
+.headline {
+  font-size: 2.8vw;
+  font-weight: 450;
+  color: #00c2ff;
+}

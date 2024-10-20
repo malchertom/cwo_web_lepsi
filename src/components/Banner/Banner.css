@@ -1,0 +1,79 @@
+.banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15172006302521013) 70%, rgba(0,0,0,0.30017944677871145) 85%, rgba(0,0,0,1) 100%);
+    */
+    background: rgb(19,19,19);
+    background: linear-gradient(180deg, rgba(19,19,19,0) 0%, rgba(19,19,19,0.1461178221288515) 70%, rgba(19,19,19,0.3057816876750701) 85%, rgba(19,19,19,1) 100%);
+    
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+
+    mix-blend-mode: multiply;
+    mix-blend-mode: color;
+}
+
+.banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.banner-content .banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-content .banner-text p {
+    color: whitesmoke;
+    text-transform: uppercase;
+
+    font-size: 7vw;
+    font-weight: 600;
+    letter-spacing: -8px;
+    line-height: 1;
+}
+
+.banner-content button {
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 2.5vw;
+    font-weight: 600;
+    padding: 13px 32px;
+}
+
+.flip-clock{
+    --fcc-background: #ffffff;
+    --fcc-digit-color: #000;
+    --fcc-spacing: 1vw;
+    --fcc-digit-block-width: 4vw;
+    --fcc-digit-block-height: 6vw;
+    --fcc-digit-block-radius: 0.6vw;
+    --fcc-digit-block-spacing: 4px;
+    --fcc-digit-font-size: 5vw;
+    --fcc-label-font-size: 1vw;
+    --fcc-separator-size: 1vw;
+    --size: 80vw;
+    color: white;
+}
+
+

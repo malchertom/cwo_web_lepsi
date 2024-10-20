@@ -1,0 +1,32 @@
+.timeline {
+    padding: calc(var(--section-padding) / 6) var(--section-padding);
+
+    color: whitesmoke;
+    
+    /*
+    background-color: var(--cwo-black);
+    */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+
+    background-color: #2B2B2B;
+    box-shadow: inset 0px 8px 16px -6px #000, inset 0px -8px 16px -6px #000;
+}
+
+
+.timeline-tree {
+    width: 100%;
+    font-size: 1.2vw;
+}
+
+.timeline-left, .timeline-right {
+    width: 100%;
+}
+
+.redColor {
+    color: red;
+}

@@ -1,0 +1,46 @@
+.footer {
+    padding: calc(var(--section-padding) / 8);
+    background-color: var(--cwo-black);
+    color: whitesmoke;
+
+    display: flex;
+    justify-content: space-around;
+
+    box-sizing: border-box;
+    border-top: 1px solid whitesmoke;
+}
+
+.ig-handle, .email-handle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1vw;
+    transition: all .2s linear;
+}
+
+.ig-handle:hover {
+    cursor: pointer;
+    color: #00c2ff;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.person-info .name-function {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.person-info .name {
+    font-size: 1.4vw;
+    font-weight: 450;
+}
+
+.person-info .function {
+    font-size: .8vw;
+    font-weight: 400;
+}
