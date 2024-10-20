@@ -11,6 +11,7 @@ function Banner() {
                     <p>Czech</p>
                     <p className='blue-text'>Weightlifting</p>
                     <p>Open 2024</p>
+                    <p className='addD-eadlift blue-text'>+ DEADLIFT EVENT</p>
                 </div>
 
                 <FlipClockCountdown 

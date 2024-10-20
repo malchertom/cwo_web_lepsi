@@ -7,9 +7,14 @@
 }
 
 :root {
-  --section-padding: 128px;
   --section-padding: 358px;
   --cwo-black: #131313;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --section-padding: 0px;
+  }
 }
 
 /* width */
@@ -55,18 +60,25 @@ button a {
   all: unset;
 }
 
-.blue-text {
-  -webkit-text-fill-color: #0000;
-  animation: textclip 8s linear infinite;
-  background: linear-gradient(45deg, #086082, #00c2ff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(90deg, #086082, #00c2ff 50%, #086082);
-  background-size: 200% auto;
-}
+
+
+.blue-text{
+-webkit-text-fill-color: #0000;
+    animation: textclip 8s linear infinite;
+    background: linear-gradient(45deg, #086082, #00c2ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #086082, #00c2ff 50%, #086082);
+    background-size: initial;
+    background-size: 200% auto;
+    color: #fff;
+    color: #0000;
+    z-index: 100000000000;
+  }
 
 .headline {
   font-size: 2.8vw;
   font-weight: 450;
   color: #00c2ff;
 }
+
