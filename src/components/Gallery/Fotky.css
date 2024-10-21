@@ -7,7 +7,13 @@
     flex-direction: column;
     align-items: center;
 
-    min-height: 600px;
+    min-height: 800px;
+    
+}
+
+.Gallery-wrap{
+  width: 60vw;
+  overflow-y: scroll;
 }
 
 .img-responsive{
@@ -31,16 +37,10 @@
   
   .masonry-gallery-demo {
     min-height: fit-content;
-    width: 60%;
+
     margin: 0 auto;
     margin-top: 30px;
     padding-bottom: 50px;
-  }
-  
-  @media (max-width: 1366px) {
-    .masonry-gallery-demo {
-      width: 80%;
-    }
   }
   
   
@@ -52,7 +52,8 @@
   
     .grid-sizer,
     .lg-item {
-      width: 33.33%;
+      width: 66%;
+      height: 66%;
     }
   
     @media (max-width: 1366px) {
@@ -79,3 +80,4 @@
       display: block;
       max-width: 100%;
     }
+

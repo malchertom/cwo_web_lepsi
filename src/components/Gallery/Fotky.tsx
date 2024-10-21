@@ -1,5 +1,6 @@
 import list from './Fotky.json'
 import Gallery from "./Gallery";
+import './Fotky.css'
 
 import { useEffect, useState } from "react";
 
@@ -12,12 +13,12 @@ function Fotky() {
             setImageList({"CWO": list["CWO"]})
     },[portfolioPage])
   return (
-    <div className="Fotky">
-        <div className='FotkyHeaderWrap'>
+    <section className="Fotky">
             <h2 className='headline'>Galerie CWO 2023</h2>
-        </div>
+      <div className='Gallery-wrap'>
         <Gallery listObr={ImageList} />
-    </div>
+      </div>
+    </section>
   );
 }
 
