@@ -4,6 +4,7 @@
   user-select: none;
   overscroll-behavior: none;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {

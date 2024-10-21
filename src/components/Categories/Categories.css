@@ -141,6 +141,12 @@
     line-height: 1.6vw;
 }
 
+.pravidla-download a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
 .pravidla-download:hover {
     cursor: pointer;
 }

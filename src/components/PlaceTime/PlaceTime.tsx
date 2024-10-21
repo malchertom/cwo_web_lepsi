@@ -5,7 +5,7 @@ import MapComponent from './Map';
 
 function PlaceTime() {
     return(
-        <section className="placetime">
+        <section className="placetime" id='placetime'>
             <div className='placetime-info'>
                 <p className='headline'>Kdy a kde?</p>
                 <div className='info-div'>
