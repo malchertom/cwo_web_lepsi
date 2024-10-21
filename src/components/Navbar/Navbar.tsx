@@ -49,25 +49,25 @@ function Navbar() {
                         className={activeSection === "banner" ? "active" : ""}
                         onClick={(e) => handleScroll(e, "#banner")}
                     >
-                        Home
+                        Domů
                     </li>
                     <li
                         className={activeSection === "about" ? "active" : ""}
                         onClick={(e) => handleScroll(e, "#about")}
                     >
-                        About
+                        Co je to CWO?
                     </li>
                     <li
                         className={activeSection === "categories" ? "active" : ""}
                         onClick={(e) => handleScroll(e, "#categories")}
                     >
-                        Categories
+                        Soutěžní kategorie
                     </li>
                     <li
                         className={activeSection === "placetime" ? "active" : ""}
                         onClick={(e) => handleScroll(e, "#placetime")}
                     >
-                        Place
+                        Kdy a kde? 
                     </li>
                     <li
                         className={activeSection === "timeline" ? "active" : ""}
@@ -79,7 +79,7 @@ function Navbar() {
                         className={activeSection === "gallery" ? "active" : ""}
                         onClick={(e) => handleScroll(e, "#gallery")}
                     >
-                        Gallery
+                        Galerie
                     </li>
                 </ul>
             </div>

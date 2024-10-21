@@ -12,7 +12,7 @@ function Categories() {
     }
     return(
         <section className='categories' id='categories'>
-            <p className='headline'>Kategorie</p>
+            <p className='headline'>Soutěžní kategorie</p>
             <div className='categories-inner'>
                 <div className='categories-select'>
                     <ul>
