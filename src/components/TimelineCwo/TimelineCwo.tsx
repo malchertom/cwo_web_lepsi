@@ -4,7 +4,7 @@ import TimelineCwoItem from './TimelineCwoItem';
 
 function TimelineCwo() {
     return(
-        <section className="timeline">
+        <section className="timeline" id='timeline'>
             <p className='headline'>Timeline</p>
             <div className='timeline-tree'>
             <Timeline>

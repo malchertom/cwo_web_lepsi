@@ -13,7 +13,7 @@ function Fotky() {
             setImageList({"CWO": list["CWO"]})
     },[portfolioPage])
   return (
-    <section className="Fotky">
+    <section className="Fotky" id='gallery'>
             <h2 className='headline'>Galerie CWO 2023</h2>
       <div className='Gallery-wrap'>
         <Gallery listObr={ImageList} />

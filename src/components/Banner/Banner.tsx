@@ -4,7 +4,7 @@ import './Banner.css'
 
 function Banner() {
     return(
-        <section className='banner'>
+        <section className='banner' id='banner'>
             <img src='/assets/imgs/banner.jpg' alt='cwo_banner' className='banner-img'/>    
             <div className='banner-content'>
                 <div className='banner-text'>

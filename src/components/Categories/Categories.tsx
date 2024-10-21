@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Categories.css'
 import { soloWomen, soloMen, teamOpen, teamOpenDead } from './CategoriesDefinition';
 import { AnimatePresence } from 'framer-motion';
+import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 
 function Categories() {
     const [selected, setSelected] = useState('teamOpen');
@@ -10,7 +11,7 @@ function Categories() {
         setSelected(str);
     }
     return(
-        <section className='categories'>
+        <section className='categories' id='categories'>
             <p className='headline'>Kategorie</p>
             <div className='categories-inner'>
                 <div className='categories-select'>
@@ -44,8 +45,16 @@ function Categories() {
             </div>
 
         <div className="Prav">
-            <p className="pravidla-download" ><a href="assets\pdfs\Technická a soutěžní pravidla a předpisy ČSV - 2019.pdf" target="_blank">Pravidla a soutěžní řád ČSV</a></p>
-            <p className="pravidla-download" ><a href="assets\pdfs\Pravidla silového trojboj - 2024.pdf" target="_blank">Pravidla a soutěžní řád ČSST</a></p>
+            <p className="pravidla-download">
+                <a href="assets\pdfs\Technická a soutěžní pravidla a předpisy ČSV - 2019.pdf" target="_blank">
+                    <FileDownloadOutlinedIcon /> <span>Pravidla a soutěžní řád ČSV</span>
+                </a>
+            </p>
+            <p className="pravidla-download">
+                <a href="assets\pdfs\Pravidla silového trojboj - 2024.pdf" target="_blank">
+                    <FileDownloadOutlinedIcon /> <span>Pravidla a soutěžní řád ČSST</span>
+                </a>
+            </p>
         </div>
         </section>
     );
