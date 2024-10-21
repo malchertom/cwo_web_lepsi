@@ -1,0 +1,31 @@
+{
+    "CWO": [
+        ["./assets/gallery_imgs/1.JPG", "./assets/thumbnails/1.JPG", ""],
+        ["/assets/gallery_imgs/2.JPG", "/assets/thumbnails/2.JPG", ""],
+        ["/assets/gallery_imgs/3.JPG", "/assets/thumbnails/3.JPG", ""],
+        ["/assets/gallery_imgs/4.JPG", "/assets/thumbnails/4.JPG", ""],
+        ["/assets/gallery_imgs/5.JPG", "/assets/thumbnails/5.JPG", ""],
+        ["/assets/gallery_imgs/6.JPG", "/assets/thumbnails/6.JPG", ""],
+        ["/assets/gallery_imgs/7.JPG", "/assets/thumbnails/7.JPG", ""],
+        ["/assets/gallery_imgs/8.JPG", "/assets/thumbnails/8.JPG", ""],
+        ["/assets/gallery_imgs/9.JPG", "/assets/thumbnails/9.JPG", ""],
+        ["/assets/gallery_imgs/10.JPG", "/assets/thumbnails/10.JPG", ""],
+        ["/assets/gallery_imgs/11.JPG", "/assets/thumbnails/11.JPG", ""],
+        ["/assets/gallery_imgs/12.JPG", "/assets/thumbnails/12.JPG", ""],
+        ["/assets/gallery_imgs/13.JPG", "/assets/thumbnails/13.JPG", ""],
+        ["/assets/gallery_imgs/14.JPG", "/assets/thumbnails/14.JPG", ""],
+        ["/assets/gallery_imgs/15.JPG", "/assets/thumbnails/15.JPG", ""],
+        ["/assets/gallery_imgs/16.JPG", "/assets/thumbnails/16.JPG", ""],
+        ["/assets/gallery_imgs/17.JPG", "/assets/thumbnails/17.JPG", ""],
+        ["/assets/gallery_imgs/18.JPG", "/assets/thumbnails/18.JPG", ""],
+        ["/assets/gallery_imgs/19.JPG", "/assets/thumbnails/19.JPG", ""],
+        ["/assets/gallery_imgs/20.JPG", "/assets/thumbnails/20.JPG", ""],
+        ["/assets/gallery_imgs/21.JPG", "/assets/thumbnails/21.JPG", ""],
+        ["/assets/gallery_imgs/22.JPG", "/assets/thumbnails/22.JPG", ""],
+        ["/assets/gallery_imgs/23.JPG", "/assets/thumbnails/23.JPG", ""],
+        ["/assets/gallery_imgs/24.JPG", "/assets/thumbnails/24.JPG", ""],
+        ["/assets/gallery_imgs/25.JPG", "/assets/thumbnails/25.JPG", ""]
+
+    ]
+
+}

@@ -75,6 +75,7 @@
 
 .categories-select li.active {
     color: #00c2ff;
+    font-weight: 600;
 }
 
 .categories-content {
@@ -120,3 +121,66 @@
     list-style-type: none;
 }
 */
+.Prav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    color:#00c2ff
+}
+
+.pravidla-download{
+    list-style-type: none;
+    width: max-content;
+    display: inline-block;
+    position: relative;
+    transition: all .2s linear;
+    
+    font-size: 1.4vw;
+    font-weight: 300;
+    line-height: 1.6vw;
+}
+
+.pravidla-download:hover {
+    cursor: pointer;
+}
+  
+.pravidla-download::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #00c2ff;
+    transition: transform 0.25s ease-out;
+    transform-origin: bottom center;
+}
+
+.pravidla-download:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+.pravidla-download .active {
+    color: #00c2ff;
+}
+
+.pravidla-download a:link {
+    text-decoration: none;
+    color: #00c2ff;
+  }
+  
+  .pravidla-download a:visited {
+    text-decoration: none;
+    color: #00c2ff;
+  }
+  
+  .pravidla-download a:hover {
+    text-decoration: none;
+  }
+  
+  .pravidla-download a:active {
+    text-decoration: none;
+  }

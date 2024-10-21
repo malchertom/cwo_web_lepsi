@@ -16,7 +16,7 @@ function Banner() {
 
                 <FlipClockCountdown 
                     className="flip-clock"
-                    to={new Date("2024/12/19")} 
+                    to={new Date("2024/12/21")} 
                     labels={['DNY', 'HODINY', 'MINUTY', 'SEKUNDY']}
                 />
 
