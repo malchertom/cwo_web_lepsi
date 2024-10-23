@@ -43,3 +43,16 @@
     border: 3px solid #424242;
     */
 }
+
+
+@media only screen and (max-width: 600px) {
+    .about {
+        padding: calc(var(--section-padding) / 6) 0;
+    }
+    .about-text {
+        font-size: 3.5vw;
+        line-height: normal;
+    }
+
+  }
+  

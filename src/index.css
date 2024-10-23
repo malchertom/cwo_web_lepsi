@@ -11,12 +11,6 @@
   --cwo-black: #131313;
 }
 
-@media only screen and (max-width: 600px) {
-  :root {
-    --section-padding: 0px;
-  }
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 4px;
@@ -82,3 +76,16 @@ button a {
   color: #00c2ff;
 }
 
+
+
+@media only screen and (max-width: 600px) {
+
+  button a{
+    font-size: 6vw;
+  }
+
+  .headline {
+    font-size: 6vw;
+
+  }
+}

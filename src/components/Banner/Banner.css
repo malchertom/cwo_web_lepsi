@@ -83,4 +83,39 @@
     font-size: 2.8vw !important;
 }
 
+@media (max-width: 1366px) {
+    .flip-clock{
+      --fcc-background: #ffffff;
+      --fcc-digit-color: #000;
+      --fcc-spacing: 1vw;
+      --fcc-digit-block-width: 8vw;
+      --fcc-digit-block-height: 14vw;
+      --fcc-digit-block-radius: 0.6vw;
+      --fcc-digit-block-spacing: 4px;
+      --fcc-digit-font-size: 9vw;
+      --fcc-label-font-size: 2vw;
+      --fcc-separator-size: 1vw;
+      --size: 80vw;
+      color: white;
+    }
+  
+  }
+
+
+@media only screen and (max-width: 600px) {
+    
+    .banner-content .banner-text p {
+        font-size: 14vw;
+        letter-spacing: -4px;
+        line-height: 1;
+    }
+
+    .banner-content {
+        top: 10%;
+        gap: 30px;
+    }
+
+  }
+  
+
 

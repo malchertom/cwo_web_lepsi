@@ -44,3 +44,30 @@
     font-size: .8vw;
     font-weight: 400;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        padding: calc(var(--section-padding) / 8) calc(var(--section-padding) / 4);
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .person-info .name {
+        font-size: 5vw;
+    }
+
+    .person-info .function {
+        font-size: 3vw;
+    }
+
+    .person-info .name-function {
+        gap: 4px;
+    }
+
+    .ig-handle, .email-handle {
+        gap: 6px;
+        font-size: 3vw;
+    }
+
+  }
+  

@@ -190,3 +190,37 @@
   .pravidla-download a:active {
     text-decoration: none;
   }
+
+
+  @media only screen and (max-width: 600px) {
+    .categories {
+        padding: calc(var(--section-padding) / 6) 0;
+    }
+
+    .categories-definition {
+        font-size: 3.5vw;
+        line-height: normal;
+    }
+
+    .categories-select ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .categories-select li {
+        font-size: 4.2vw;
+        align-self: center;
+    }
+
+    .Prav{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pravidla-download{
+        font-size: 3vw;
+        font-weight: 300;
+        line-height: 1.6vw;
+    }
+  }
