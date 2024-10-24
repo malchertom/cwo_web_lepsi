@@ -19,7 +19,7 @@ function MapComponent() {
     const mapObj = new Map({
       view: new View({
         center: fromLonLat([16.5687, 49.1785]),
-        zoom: 14,
+        zoom: 12,
       }),
       layers: [new Tile({ source: new OSM() })],
       interactions: [],
