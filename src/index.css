@@ -67,7 +67,7 @@ button a {
     background-size: 200% auto;
     color: #fff;
     color: #0000;
-    z-index: 100000000000;
+    z-index: 1038;
   }
 
 .headline {
