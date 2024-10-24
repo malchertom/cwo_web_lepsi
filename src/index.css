@@ -78,6 +78,7 @@ button a {
 
 
 
+
 @media only screen and (max-width: 600px) {
 
   button a{
@@ -89,3 +90,17 @@ button a {
 
   }
 }
+
+@media only screen and (max-width: 1366px) {
+
+  button a{
+    font-size: 8vw;
+  }
+
+  .headline {
+    font-size: 7vw;
+
+  }
+}
+
+

@@ -44,6 +44,17 @@
     */
 }
 
+@media only screen and (max-width: 1366px) {
+    .about {
+        padding: calc(var(--section-padding) / 6) calc(var(--section-padding) / 3);
+    }
+    .about-text {
+        font-size: 2.5vw;
+        line-height: normal;
+    }
+
+}
+
 
 @media only screen and (max-width: 600px) {
     .about {
