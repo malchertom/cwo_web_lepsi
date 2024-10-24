@@ -33,7 +33,13 @@
 
 @media only screen and (max-width: 1366px) {
     .timeline {
-        padding: calc(var(--section-padding) / 6) calc(var(--section-padding) / 3);
+        padding: calc(var(--section-padding) / 6) calc(var(--section-padding) / 4);
+    }
+    .css-w6t25c-MuiTypography-root-MuiTimelineContent-root{
+        font-size: 1.4rem !important;
+    }
+    .css-1amxudc-MuiTypography-root-MuiTimelineOppositeContent-root{
+        font-size: 1.4rem !important;
     }
 
 }
@@ -41,6 +47,13 @@
 @media only screen and (max-width: 600px) {
     .timeline {
         padding: calc(var(--section-padding) / 6) 0;
+    }
+
+    .css-w6t25c-MuiTypography-root-MuiTimelineContent-root{
+        font-size: 0.8rem !important;
+    }
+    .css-1amxudc-MuiTypography-root-MuiTimelineOppositeContent-root{
+        font-size: 0.8rem !important;
     }
   }
   
