@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 import './Navbar.css'
+import { Squash as Hamburger } from 'hamburger-react'
+
 
 function Navbar() {
     const [activeSection, setActiveSection] = useState<string | null>(null);
+    const [isOpen, setOpen] = useState(false)
 
     useEffect(() => {
         const sections = document.querySelectorAll("section");
@@ -31,6 +34,10 @@ function Navbar() {
     
     const handleScroll = (e: React.MouseEvent<HTMLLIElement, MouseEvent>, sectionId: string) => {
         e.preventDefault();
+
+        if(isOpen) {
+            setOpen(false);
+        }
       
         const section = document.querySelector<HTMLElement>(sectionId);
         if (!section) return;
@@ -42,7 +49,52 @@ function Navbar() {
     };
 
     return(
-        <nav>
+        <nav className={isOpen ? 'nav-mobile':''}>
+            <div className='hamburger-menu'>
+                <Hamburger toggled={isOpen} toggle={setOpen} size={20}/>
+                {isOpen && 
+                    <div className='mobile-navbar'>
+                        <ul>
+                            <li
+                                className={activeSection === "banner" ? "active" : ""}
+                                onClick={(e) => handleScroll(e, "#banner")}
+                            >
+                                Domů
+                            </li>
+                            <li
+                                className={activeSection === "about" ? "active" : ""}
+                                onClick={(e) => handleScroll(e, "#about")}
+                            >
+                                Co je to CWO?
+                            </li>
+                            <li
+                                className={activeSection === "categories" ? "active" : ""}
+                                onClick={(e) => handleScroll(e, "#categories")}
+                            >
+                                Soutěžní kategorie
+                            </li>
+                            <li
+                                className={activeSection === "placetime" ? "active" : ""}
+                                onClick={(e) => handleScroll(e, "#placetime")}
+                            >
+                                Kdy a kde? 
+                            </li>
+                            <li
+                                className={activeSection === "timeline" ? "active" : ""}
+                                onClick={(e) => handleScroll(e, "#timeline")}
+                            >
+                                Timeline
+                            </li>
+                            <li
+                                className={activeSection === "gallery" ? "active" : ""}
+                                onClick={(e) => handleScroll(e, "#gallery")}
+                            >
+                                Galerie
+                            </li>
+                        </ul>
+                    </div>
+                }
+            </div>
             <div className='navbar'>
                 <ul>
                     <li
