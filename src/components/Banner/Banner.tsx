@@ -21,7 +21,7 @@ function Banner() {
                 />
 
                 <button>
-                    <a href="https://www.muni.cz" target="_blank" rel="noopener noreferrer">Registrace</a>
+                    <a href="https://is.muni.cz/obchod/fakulta/fsps/CWO_2024/" target="_blank" rel="noopener noreferrer">Registrace</a>
                 </button>
             </div>
         </section>
