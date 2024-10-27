@@ -85,12 +85,6 @@ function Navbar() {
                             >
                                 Timeline
                             </li>
-                            <li
-                                className={activeSection === "gallery" ? "active" : ""}
-                                onClick={(e) => handleScroll(e, "#gallery")}
-                            >
-                                Galerie
-                            </li>
                         </ul>
                     </div>
                 }
@@ -126,12 +120,6 @@ function Navbar() {
                         onClick={(e) => handleScroll(e, "#timeline")}
                     >
                         Timeline
-                    </li>
-                    <li
-                        className={activeSection === "gallery" ? "active" : ""}
-                        onClick={(e) => handleScroll(e, "#gallery")}
-                    >
-                        Galerie
                     </li>
                 </ul>
             </div>
