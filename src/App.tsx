@@ -17,7 +17,7 @@ function App() {
       <Categories />
       <PlaceTime />
       <Timeline />
-      <Fotky />
+      
       <Footer />
     </div>
   );
