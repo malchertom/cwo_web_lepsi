@@ -26,11 +26,11 @@ function Categories() {
                         </li>
                         <li onClick={()=>handleClick('teamOpen')}
                             className={selected === 'teamOpen'? 'active' : ''}>
-                            Team Open
+                            CWO Team OPEN
                         </li>
                         <li onClick={()=>handleClick('teamOpenDead')}
                             className={selected === 'teamOpenDead'? 'active' : ''}>
-                            Team Open - DeadWeight
+                            CWO Team OPEN (+1 deadlift)
                         </li>
                     </ul>
                 </div>
