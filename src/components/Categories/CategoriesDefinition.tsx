@@ -21,7 +21,7 @@ export const soloWomen = (
             <li>+ 87 kg</li>
         </ol>
         <p>(pravidla vážení závodnic i závodníků najdete v sekci “Pravidla a soutěžní řád ČSV”)</p><p>Minimální počet závodnic pro otevření dané hmotností skupiny je vždy 5. Při nižším počtu než 5 závodnic registrovaných do dané hmotnostní skupiny si pořadatel vyhrazuje právo sloučit hmotnostní skupiny dle předem stanovených počtů v nejbližších hmotnostních skupinách. Typicky pak směrem vzhůru v hierarchii hmotnostních skupin. Výsledné pořadí každé závodnice v rámci dané hmotnostní skupiny je určeno seřazením nejvyšších dosažených hodnot platného dvojboje v soutěži.</p>
-        <p>Pro účast v soutěži v rámci CWO není nutné být členem ČSV, avšak pro soutěž v rámci AMČR je členství vyžadováno.</p>
+        <p>Pravidla se vztahují na soutěž jednotlivců v rámci CWO i AMČR. Pro účast v soutěži v rámci CWO není nutné být členem ČSV, avšak pro soutěž v rámci AMČR je členství vyžadováno.</p>
     </motion.div>
 )
 
@@ -46,7 +46,7 @@ export const soloMen = (
             <li>+ 109 kg</li>
         </ol>
         <p>(pravidla vážení závodnic i závodníků najdete v sekci “Pravidla a soutěžní řád ČSV”)</p><p>Minimální počet závodníků pro otevření dané hmotností skupiny je vždy 5. Při nižším počtu než 5 závodníků registrovaných do dané hmotnostní skupiny si pořadatel vyhrazuje právo sloučit hmotnostní skupiny dle předem stanovených počtů v nejbližších hmotnostních skupinách. Typicky pak směrem vzhůru v hierarchii hmotnostních skupin. Výsledné pořadí každého závodníka v rámci dané hmotnostní skupiny je určeno seřazením nejvyšších dosažených hodnot platného dvojboje v soutěži.</p>
-        <p>Pro účast v soutěži v rámci CWO není nutné být členem ČSV, avšak pro soutěž v rámci AMČR je členství vyžadováno.</p>
+        <p>Pravidla se vztahují na soutěž jednotlivců v rámci CWO i AMČR. Pro účast v soutěži v rámci CWO není nutné být členem ČSV, avšak pro soutěž v rámci AMČR je členství vyžadováno.</p>
     </motion.div>
 )
 
