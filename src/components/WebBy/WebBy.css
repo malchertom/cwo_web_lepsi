@@ -1,0 +1,15 @@
+.WebBy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 150%;
+    padding: calc(var(--section-padding) / 60) calc(var(--section-padding) / 30);
+
+    color: whitesmoke;
+    background-color: var(--cwo-black);
+}
+
+.WebBy P{
+    font-weight: 300;
+}
