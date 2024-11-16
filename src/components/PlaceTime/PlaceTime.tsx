@@ -25,7 +25,7 @@ function PlaceTime() {
 
             </div>
             <div className='placetime-map'>
-               <MapComponent />
+                <MapComponent />
             </div>
         </section>
     );
