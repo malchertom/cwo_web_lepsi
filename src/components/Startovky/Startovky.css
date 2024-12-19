@@ -1,0 +1,38 @@
+.startlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(var(--section-padding) / 6) calc(var(--section-padding)*0.6);
+    gap: 24px;
+    color: whitesmoke;
+    background-color: var(--cwo-black);
+    background-color: #2B2B2B;
+    box-shadow: inset 0px 8px 16px -6px #000, inset 0px -8px 16px -6px #000;
+    
+  }
+
+.startlist-header {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.masonry-gallery {
+  max-height: 65vh;
+  overflow: auto;
+}
+
+
+@media only screen and (max-width: 1366px) {
+    .startlist {
+        padding: calc(var(--section-padding) / 6) calc(var(--section-padding) / 3);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .startlist {
+        padding: calc(var(--section-padding) / 6) 0;
+    }
+}

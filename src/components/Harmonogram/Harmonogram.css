@@ -1,0 +1,36 @@
+.harmonogram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(var(--section-padding) / 6) calc(var(--section-padding)*0.6);
+    gap: 24px;
+    color: whitesmoke;
+    background-color: var(--cwo-black);
+    box-shadow: inset 0px 8px 16px -6px #000, inset 0px -8px 16px -6px #000;
+    
+  }
+
+.harmonogram-header {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.masonry-image {
+    max-height: 60vh;
+}
+
+
+@media only screen and (max-width: 1366px) {
+    .harmonogram {
+        padding: calc(var(--section-padding) / 6) calc(var(--section-padding) / 3);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .harmonogram {
+        padding: calc(var(--section-padding) / 6) 0;
+    }
+}

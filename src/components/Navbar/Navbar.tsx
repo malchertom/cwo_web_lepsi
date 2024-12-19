@@ -74,6 +74,18 @@ function Navbar() {
                                 Soutěžní kategorie
                             </li>
                             <li
+                                className={activeSection === "harmonogram" ? "active" : ""}
+                                onClick={(e) => handleScroll(e, "#harmonogram")}
+                            >
+                                Harmonogram
+                            </li>
+                            <li
+                                className={activeSection === "startlist" ? "active" : ""}
+                                onClick={(e) => handleScroll(e, "#startlist")}
+                            >
+                                Startovní listina
+                            </li>
+                            <li
                                 className={activeSection === "placetime" ? "active" : ""}
                                 onClick={(e) => handleScroll(e, "#placetime")}
                             >
@@ -108,6 +120,18 @@ function Navbar() {
                         onClick={(e) => handleScroll(e, "#categories")}
                     >
                         Soutěžní kategorie
+                    </li>
+                    <li
+                        className={activeSection === "harmonogram" ? "active" : ""}
+                        onClick={(e) => handleScroll(e, "#harmonogram")}
+                    >
+                        Harmonogram
+                    </li>
+                    <li
+                        className={activeSection === "startlist" ? "active" : ""}
+                        onClick={(e) => handleScroll(e, "#startlist")}
+                    >
+                        Startovní listina
                     </li>
                     <li
                         className={activeSection === "placetime" ? "active" : ""}
