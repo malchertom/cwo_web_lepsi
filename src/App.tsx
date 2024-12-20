@@ -10,6 +10,7 @@ import Propozice from './components/Propozice/Propozice';
 import Timeline from './components/TimelineCwo/TimelineCwo';
 import WebBy from './components/WebBy/WebBy';
 import Harmonogram from './components/Harmonogram/Harmonogram';
+import Sponzori from './components/Sponzori/Sponzori';
 
 
 
@@ -26,6 +27,7 @@ function App() {
       <PlaceTime />
       <Timeline />
       <Propozice />
+      <Sponzori />
       <Footer />
       <WebBy />
       

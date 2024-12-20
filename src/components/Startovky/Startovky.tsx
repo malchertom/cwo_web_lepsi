@@ -21,8 +21,8 @@ function Startovky() {
         { src: './assets/startovka/team2.png', alt: 'Photo 3' },
         { src: './assets/startovka/team3.png', alt: 'Photo 3' },
         
-        { src: './assets/startovka/teamDeadlift.png', alt: 'Photo 3' },
-        { src: './assets/startovka/teamDeadlift2.png', alt: 'Photo 3' },
+        { src: './assets/startovka/deadlift.png', alt: 'Photo 3' },
+        { src: './assets/startovka/deadlift1.png', alt: 'Photo 3' },
         // Add more photo objects
       ];
     return(    
