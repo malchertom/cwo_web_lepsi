@@ -1,67 +1,47 @@
 .masonry-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px; /* Adjust gap as needed */
-    margin: 0 auto;
-    padding: 16px; /* Adjust padding as needed */
-    max-width: 100vw;
-  }
-  
-  .masonry-item {
-    flex: 1 1 calc(25% - 16px); /* 3 columns on desktop */
-    box-sizing: border-box;
-  }
-  
-  .masonry-item:nth-child(odd) {
-    margin-top: 0px;
-  }
-  
-  .masonry-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px; /* Optional for rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional for shadow effect */
-  }
+  columns: 230px;
+}
 
-  .masonry-image:hover {
-    cursor: pointer;
-  }
+.masonry-image {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
 
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .enlarged-container {
-    position: relative;
-  }
-  
-  .enlarged-image {
-    max-height: 90vh;
-    max-width: 90vw;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-  }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.enlarged-container {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.enlarged-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 10px;
+}
   
   /* Responsive design */
 @media (max-width: 768px) {
-    .masonry-item {
-      flex: 1 1 calc(50% - 16px); /* 2 columns on tablets */
-    }
+  .masonry-gallery {
+    columns: 150px;
+  }
 }
   
 @media (max-width: 480px) {
-    .masonry-item {
-      flex: 1 1 calc(100% - 16px); /* 1 column on mobile */
-    }
+  .masonry-gallery {
+    columns: 130px;
+  }
 }

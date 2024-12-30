@@ -1,0 +1,107 @@
+.photogallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(var(--section-padding) / 6) calc(var(--section-padding)*0.6);
+    gap: 24px;
+    color: whitesmoke;
+    background-color: var(--cwo-black);
+    box-shadow: inset 0px 8px 16px -6px #000, inset 0px -8px 16px -6px #000;
+    
+  }
+
+.photogallery-header {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gallery-wrap {
+  max-height: 65vh;
+  overflow: scroll;
+}
+
+.gallery-select {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.gallery-select ul {
+  display: flex;
+  gap: 28px;
+}
+
+.gallery-select li {
+  list-style-type: none;
+  width: max-content;
+  display: inline-block;
+  position: relative;
+  transition: all .2s linear;
+  
+  font-size: 1.4vw;
+  font-weight: 400;
+  line-height: 1.6vw;
+}
+
+.gallery-select li:hover {
+  cursor: pointer;
+}
+
+.gallery-select li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #00c2ff;
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom center;
+}
+
+.gallery-select li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+.gallery-select li.active {
+  color: #00c2ff;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 1366px) {
+    .photogallery {
+        padding: calc(var(--section-padding) / 6) calc(var(--section-padding) / 3);
+    }
+    .gallery-select ul {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .gallery-select li {
+        font-size: 3vw;
+        align-self: center;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .photogallery {
+        padding: calc(var(--section-padding) / 6) calc(var(--section-padding) / 64);
+    }
+    .gallery-select ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .gallery-select li {
+        font-size: 4.2vw;
+        align-self: center;
+    }
+}

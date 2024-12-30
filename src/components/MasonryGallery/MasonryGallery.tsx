@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './MasonryGallery.css';
 
 type Photo = {
-  src: string;
-  alt: string;
+  src: string; // Full image source
+  thumbnail: string; // Thumbnail image source
+  alt: string; // Alt text for both
 };
 
 type MasonryGalleryProps = {
@@ -25,14 +26,13 @@ const MasonryGallery: React.FC<MasonryGalleryProps> = ({ photos }) => {
     <div>
       <div className="masonry-gallery">
         {photos.map((photo, index) => (
-          <div className="masonry-item" key={index}>
-            <img 
-              src={photo.src} 
-              alt={photo.alt} 
-              className="masonry-image" 
-              onClick={() => handleImageClick(photo)}
-            />
-          </div>
+          <img 
+            src={photo.thumbnail} 
+            alt={photo.alt} 
+            className="masonry-image" 
+            key={index}
+            onClick={() => handleImageClick(photo)}
+          />
         ))}
       </div>
 

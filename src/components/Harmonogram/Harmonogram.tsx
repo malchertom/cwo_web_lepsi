@@ -4,7 +4,7 @@ import MasonryGallery from '../MasonryGallery/MasonryGallery';
 
 function Harmonogram() {
     const photoData = [
-        { src: './assets/startovka/harmonogram.png', alt: 'Photo 1' },
+        { src: './assets/startovka/harmonogram.png', alt: 'Photo 1', thumbnail: "" },
         // Add more photo objects
       ];
     return(    

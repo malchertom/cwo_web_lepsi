@@ -74,16 +74,10 @@ function Navbar() {
                                 Soutěžní kategorie
                             </li>
                             <li
-                                className={activeSection === "harmonogram" ? "active" : ""}
-                                onClick={(e) => handleScroll(e, "#harmonogram")}
+                                className={activeSection === "photogallery" ? "active" : ""}
+                                onClick={(e) => handleScroll(e, "#photogallery")}
                             >
-                                Harmonogram
-                            </li>
-                            <li
-                                className={activeSection === "startlist" ? "active" : ""}
-                                onClick={(e) => handleScroll(e, "#startlist")}
-                            >
-                                Startovní listina
+                                Fotogalerie
                             </li>
                             <li
                                 className={activeSection === "placetime" ? "active" : ""}
@@ -122,16 +116,10 @@ function Navbar() {
                         Soutěžní kategorie
                     </li>
                     <li
-                        className={activeSection === "harmonogram" ? "active" : ""}
-                        onClick={(e) => handleScroll(e, "#harmonogram")}
+                        className={activeSection === "photogallery" ? "active" : ""}
+                        onClick={(e) => handleScroll(e, "#photogallery")}
                     >
-                        Harmonogram
-                    </li>
-                    <li
-                        className={activeSection === "startlist" ? "active" : ""}
-                        onClick={(e) => handleScroll(e, "#startlist")}
-                    >
-                        Startovní listina
+                        Fotogalerie
                     </li>
                     <li
                         className={activeSection === "placetime" ? "active" : ""}
