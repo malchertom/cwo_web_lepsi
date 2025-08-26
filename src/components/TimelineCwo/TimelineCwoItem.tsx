@@ -36,8 +36,8 @@ function TimelineCwoItem({leftItem, rightItem, isLast}: Props) {
 
         let dateObject = new Date(+dateParts[2], dateParts[1] - 1, +dateParts[0]);
         let dateObject2 = new Date(+dateParts2[2], dateParts2[1] - 1, +dateParts2[0]);
-        let deadline = new Date('12.09.2024');
-        let deadline2 = new Date('12.15.2024');
+        let deadline = new Date(2025, 10, 1);   // Nov 1, 2025
+        let deadline2 = new Date(2025, 10, 16); // Nov 16, 2025
         
 
         if((new Date() >= deadline) && (dateObject >= deadline) && (dateObject2 >= deadline2)) {

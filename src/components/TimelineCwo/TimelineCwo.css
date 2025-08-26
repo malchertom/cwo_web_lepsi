@@ -1,7 +1,7 @@
 .timeline {
     padding: calc(var(--section-padding) / 6) var(--section-padding);
 
-    color: whitesmoke;
+    color: #131313;
     
     /*
     background-color: var(--cwo-black);
@@ -13,8 +13,7 @@
 
     gap: 16px;
 
-    background-color: #2B2B2B;
-    box-shadow: inset 0px 8px 16px -6px #000, inset 0px -8px 16px -6px #000;
+    background-color: var(cwo-black);
 }
 
 

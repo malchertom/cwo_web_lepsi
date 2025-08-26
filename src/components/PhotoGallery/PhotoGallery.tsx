@@ -45,7 +45,7 @@ function PhotoGallery() {
     return(    
         <section className='photogallery' id='photogallery'>
             <div className='photogallery-header'>
-                <p className='headline'>Fotogalerie</p>  
+                <p className='headline'>Fotogalerie 2024</p>  
             </div>
 
             <div className='gallery-select'>

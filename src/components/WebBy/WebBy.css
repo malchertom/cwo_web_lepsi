@@ -6,7 +6,7 @@
     line-height: 150%;
     padding: calc(var(--section-padding) / 60) calc(var(--section-padding) / 30);
 
-    color: whitesmoke;
+    color: #131313;
     background-color: var(--cwo-black);
 }
 

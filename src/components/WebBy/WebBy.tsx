@@ -16,7 +16,7 @@ function WebBy() {
 
     return (
         <section className="WebBy">
-            <p>Web by: Josef Susík</p>
+            <p>Web by: Tomáš Malcher</p>
 
             <div className="CopyToClipboard">
                 <Tooltip
@@ -37,7 +37,7 @@ function WebBy() {
                 >
                     {/* Wrap <p> and <ContentCopyIcon> in a <div> */}
                     <div onClick={CopyToClipboard} style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-                        <p>joseph.susik@gmail.com </p>
+                        <p>malchertomm@gmail.com </p>
                         <ContentCopyIcon className="CopyIcon" fontSize="medium" />
                         <p></p>
                     </div>

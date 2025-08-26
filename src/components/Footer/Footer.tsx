@@ -25,11 +25,11 @@ function Footer() {
             
             <div className='person-info'>
                 <div className='name-function'>
-                    <p className='name'>Bc. Tomáš Malcher</p>
+                    <p className='name'>Ing. Tomáš Malcher</p>
                     <p className='function'>Content & Design manager</p>
                 </div>
-                <IgHandle igHandle={'tommalcher'} />
-                <EmailHandle email={'malchertom@gmail.com'} />
+                <IgHandle igHandle={'tommalcher.photo'} />
+                <EmailHandle email={'malchertomm@gmail.com'} />
             </div>
         </footer>
     );

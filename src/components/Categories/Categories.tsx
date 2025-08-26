@@ -28,10 +28,12 @@ function Categories() {
                             className={selected === 'teamOpen'? 'active' : ''}>
                             CWO Team OPEN
                         </li>
+                        {/*
                         <li onClick={()=>handleClick('teamOpenDead')}
                             className={selected === 'teamOpenDead'? 'active' : ''}>
                             CWO Team OPEN (+1 deadlift)
                         </li>
+                        */}        
                     </ul>
                 </div>
                 <div className='categories-content'>
@@ -50,11 +52,13 @@ function Categories() {
                     <FileDownloadOutlinedIcon /> <span>Pravidla a soutěžní řád ČSV</span>
                 </a>
             </p>
+            {/*
             <p className="pravidla-download">
                 <a href="assets\pdfs\Pravidla silového trojboj - 2024.pdf" target="_blank">
                     <FileDownloadOutlinedIcon /> <span>Pravidla a soutěžní řád ČSST</span>
                 </a>
             </p>
+            */} 
         </div>
         </section>
     );

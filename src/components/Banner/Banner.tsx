@@ -8,15 +8,12 @@ function Banner() {
             <img src='/assets/imgs/banner.jpg' alt='cwo_banner' className='banner-img'/>    
             <div className='banner-content'>
                 <div className='banner-text'>
-                    <p>Czech</p>
-                    <p className='blue-text'>Weightlifting</p>
-                    <p>Open 2024</p>
-                    <p className='addD-eadlift blue-text'>+ DEADLIFT EVENT</p>
+                    <img src='/assets/imgs/headline.png' alt='cwo_headline' className='headline'/> 
                 </div>
 
                 <FlipClockCountdown 
                     className="flip-clock"
-                    to={new Date("2024/12/21")} 
+                    to={new Date("2025/11/29")} 
                     labels={['DNY', 'HODINY', 'MINUTY', 'SEKUNDY']}
                 />
 

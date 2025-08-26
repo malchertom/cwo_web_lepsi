@@ -8,6 +8,18 @@
 
     box-sizing: border-box;
     border-top: 1px solid whitesmoke;
+    color: #131313;
+    background-color: var(--cwo-grey);
+
+    /*
+    background-color: #2B2B2B;
+    
+    */
+    box-shadow: inset 0px 8px 26px -6px #919191, 
+                inset 0px -8px 26px -6px #919191;
+    border: 3px solid black;
+    outline: 10px solid white;
+    margin: 12px;
 }
 
 .ig-handle, .email-handle {

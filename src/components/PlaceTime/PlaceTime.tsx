@@ -11,7 +11,7 @@ function PlaceTime() {
                 <div className='info-div'>
                     <div className='info'>
                         <CalendarMonthIcon />
-                        <p>21. - 22.12.2024</p>
+                        <p>29. - 30. 11. 2025</p>
                     </div>
 
                     <div className='info'>
