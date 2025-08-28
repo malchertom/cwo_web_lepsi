@@ -63,7 +63,7 @@ button a {
 }
 
 
-
+/*
 .blue-text{
 -webkit-text-fill-color: #0000;
     animation: textclip 8s linear infinite;
@@ -77,6 +77,16 @@ button a {
     color: #0000;
     z-index: 1038;
   }
+*/
+.blue-text{
+-webkit-text-fill-color: #0000;
+    animation: textclip 8s linear infinite;
+    background-color: #ffee00;
+    background-clip: text;
+    color: #fff;
+    color: #0000;
+    z-index: 1038;
+  }
 
 .headline {
   font-size: 2.8vw;
@@ -84,8 +94,11 @@ button a {
   color: #ffee00;
   -webkit-text-stroke: 2px rgb(0, 0, 0);
   font-family: "BadaboomBB", sans-serif;
-  text-shadow: #181818 5px 5px 10px;
+  position: relative;
+  display: inline-block;
+  text-shadow: #999999 0px 5px 30px;
 }
+
 
 
 

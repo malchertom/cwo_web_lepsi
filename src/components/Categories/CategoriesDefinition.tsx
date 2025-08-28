@@ -9,16 +9,14 @@ export const soloWomen = (
         className="categories-definition">
         <p>Kategorie jednotlivci ženy je určena pro ženy a dívky každého věku, avšak s minimálním možným věkem závodnice - 15 let dovršených v kalendářním roce konání daného ročníku soutěže. Tato kategorie je dle pravidel IWF a tedy i ČSV rozdělena do hmotnostních skupin závodnic, odpovídající hmotnosti závodnice v den soutěže, a to konkrétně:</p>
         <ol>
-            <li>- 45 kg</li>
-            <li>- 49 kg</li>
-            <li>- 55 kg</li>
-            <li>- 59 kg</li>
-            <li>- 64 kg</li>
-            <li>- 71 kg</li>
-            <li>- 76 kg</li>
-            <li>- 81 kg</li>
-            <li>- 87 kg</li>
-            <li>+ 87 kg</li>
+            <li>48 kg</li>
+            <li>53 kg</li>
+            <li>58 kg</li>
+            <li>63 kg</li>
+            <li>69 kg</li>
+            <li>77 kg</li>
+            <li>86 kg</li>
+            <li>+ 86 kg</li>
         </ol>
         <p>(pravidla vážení závodnic i závodníků najdete v sekci “Pravidla a soutěžní řád ČSV”)</p><p>Minimální počet závodnic pro otevření dané hmotností skupiny je vždy 5. Při nižším počtu než 5 závodnic registrovaných do dané hmotnostní skupiny si pořadatel vyhrazuje právo sloučit hmotnostní skupiny dle předem stanovených počtů v nejbližších hmotnostních skupinách. Typicky pak směrem vzhůru v hierarchii hmotnostních skupin. Výsledné pořadí každé závodnice v rámci dané hmotnostní skupiny je určeno seřazením nejvyšších dosažených hodnot platného dvojboje v soutěži.</p>
         <p>Pravidla se vztahují na soutěž jednotlivců v rámci CWO i AMČR. Pro účast v soutěži v rámci CWO není nutné být členem ČSV, avšak pro soutěž v rámci AMČR je členství vyžadováno.</p>
@@ -34,16 +32,14 @@ export const soloMen = (
         className="categories-definition">
         <p>Kategorie jednotlivci muži je určena pro muže a chlapce každého věku, avšak s minimálním možným věkem závodníka  - 15 let dovršených v kalendářním roce konání daného ročníku soutěže. Tato kategorie je dle pravidel IWF a tedy i ČSV rozdělena do hmotnostních skupin závodníků ,odpovídající hmotnosti závodníka v den soutěže, a to konkrétně:</p>
         <ol>
-            <li>- 55 kg</li>
-            <li>- 61 kg</li>
-            <li>- 67 kg</li>
-            <li>- 73 kg</li>
-            <li>- 81 kg</li>
-            <li>- 89 kg</li>
-            <li>- 96 kg</li>
-            <li>- 102 kg</li>
-            <li>- 109 kg</li>
-            <li>+ 109 kg</li>
+            <li>60 kg</li>
+            <li>65 kg</li>
+            <li>71 kg</li>
+            <li>79 kg</li>
+            <li>88 kg</li>
+            <li>94 kg</li>
+            <li>110 kg</li>
+            <li>+ 110 kg</li>
         </ol>
         <p>(pravidla vážení závodnic i závodníků najdete v sekci “Pravidla a soutěžní řád ČSV”)</p><p>Minimální počet závodníků pro otevření dané hmotností skupiny je vždy 5. Při nižším počtu než 5 závodníků registrovaných do dané hmotnostní skupiny si pořadatel vyhrazuje právo sloučit hmotnostní skupiny dle předem stanovených počtů v nejbližších hmotnostních skupinách. Typicky pak směrem vzhůru v hierarchii hmotnostních skupin. Výsledné pořadí každého závodníka v rámci dané hmotnostní skupiny je určeno seřazením nejvyšších dosažených hodnot platného dvojboje v soutěži.</p>
         <p>Pravidla se vztahují na soutěž jednotlivců v rámci CWO i AMČR. Pro účast v soutěži v rámci CWO není nutné být členem ČSV, avšak pro soutěž v rámci AMČR je členství vyžadováno.</p>
