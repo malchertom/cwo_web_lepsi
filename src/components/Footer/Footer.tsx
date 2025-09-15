@@ -25,7 +25,7 @@ function Footer() {
             <div className='person-info'>
                 <div className='name-function'>
                     <p className='name'>Mgr. Martin Kutý</p>
-                    <p className='function'>{t("terka")}</p>
+                    <p className='function'>{t("martin")}</p>
                 </div>
                 <IgHandle igHandle={'coach_kuty_therapist'} />
                 <EmailHandle email={'kuty.martin@seznam.cz'} />
@@ -34,7 +34,7 @@ function Footer() {
             <div className='person-info'>
                 <div className='name-function'>
                     <p className='name'>Ing. Tomáš Malcher</p>
-                    <p className='function'>Content & Design manager</p>
+                    <p className='function'>{t("tom")}</p>
                 </div>
                 <IgHandle igHandle={'tommalcher.photo'} />
                 <EmailHandle email={'malchertomm@gmail.com'} />
