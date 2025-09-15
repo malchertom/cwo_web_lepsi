@@ -111,7 +111,7 @@ button a {
 
   .headline {
     font-size: 6vw;
-
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
   }
 }
 
