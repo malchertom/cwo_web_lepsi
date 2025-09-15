@@ -96,7 +96,7 @@ button a {
   font-family: "BadaboomBB", sans-serif;
   position: relative;
   display: inline-block;
-  text-shadow: #999999 0px 5px 30px;
+  text-shadow: #ffffff 0px 5px 30px;
 }
 
 
@@ -110,7 +110,7 @@ button a {
   }
 
   .headline {
-    font-size: 6vw;
+    font-size: 9vw;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
   }
 }
@@ -122,7 +122,7 @@ button a {
   }
 
   .headline {
-    font-size: 7vw;
+    font-size: 10vw;
 
   }
 }
