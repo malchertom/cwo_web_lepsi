@@ -1,9 +1,18 @@
 import { useEffect, useState } from 'react';
 import './Navbar.css'
 import { Squash as Hamburger } from 'hamburger-react'
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
+import type { i18n as I18nType } from 'i18next';
 
 
 function Navbar() {
+
+    const { t, i18n } = useTranslation() as {
+            t: (key: string) => string;
+            i18n: I18nType;
+          };
+
     const [activeSection, setActiveSection] = useState<string | null>(null);
     const [isOpen, setOpen] = useState(false)
 
@@ -54,84 +63,86 @@ function Navbar() {
                 <Hamburger toggled={isOpen} toggle={setOpen} size={20}/>
                 {isOpen && 
                     <div className='mobile-navbar'>
+                        <LanguageSwitcher />
                         <ul>
                             <li
                                 className={activeSection === "banner" ? "active" : ""}
                                 onClick={(e) => handleScroll(e, "#banner")}
                             >
-                                Domů
+                                {t("domu")}
                             </li>
                             <li
                                 className={activeSection === "about" ? "active" : ""}
                                 onClick={(e) => handleScroll(e, "#about")}
                             >
-                                Co je to CWO?
+                                {t("coToJe")}
                             </li>
                             <li
                                 className={activeSection === "categories" ? "active" : ""}
                                 onClick={(e) => handleScroll(e, "#categories")}
                             >
-                                Soutěžní kategorie
+                                {t("categories")}
                             </li>
                             <li
                                 className={activeSection === "photogallery" ? "active" : ""}
                                 onClick={(e) => handleScroll(e, "#photogallery")}
                             >
-                                Fotogalerie
+                                {t("foto")}
                             </li>
                             <li
                                 className={activeSection === "placetime" ? "active" : ""}
                                 onClick={(e) => handleScroll(e, "#placetime")}
                             >
-                                Kdy a kde? 
+                                {t("kdyKde")} 
                             </li>
                             <li
                                 className={activeSection === "timeline" ? "active" : ""}
                                 onClick={(e) => handleScroll(e, "#timeline")}
                             >
-                                Timeline
+                                {t("timeline")}
                             </li>
                         </ul>
                     </div>
                 }
             </div>
             <div className='navbar'>
+                <LanguageSwitcher />
                 <ul>
                     <li
                         className={activeSection === "banner" ? "active" : ""}
                         onClick={(e) => handleScroll(e, "#banner")}
                     >
-                        Domů
+                        {t("domu")}
                     </li>
                     <li
                         className={activeSection === "about" ? "active" : ""}
                         onClick={(e) => handleScroll(e, "#about")}
                     >
-                        Co je to CWO?
+                        {t("coToJe")}
                     </li>
                     <li
                         className={activeSection === "categories" ? "active" : ""}
                         onClick={(e) => handleScroll(e, "#categories")}
                     >
-                        Soutěžní kategorie
+                        {t("categories")}
                     </li>
                     <li
                         className={activeSection === "photogallery" ? "active" : ""}
                         onClick={(e) => handleScroll(e, "#photogallery")}
                     >
-                        Fotogalerie
+                        {t("foto")}
                     </li>
                     <li
                         className={activeSection === "placetime" ? "active" : ""}
                         onClick={(e) => handleScroll(e, "#placetime")}
                     >
-                        Kdy a kde? 
+                        {t("kdyKde")} 
                     </li>
                     <li
                         className={activeSection === "timeline" ? "active" : ""}
                         onClick={(e) => handleScroll(e, "#timeline")}
                     >
-                        Timeline
+                        {t("timeline")}
                     </li>
                 </ul>
             </div>

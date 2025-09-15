@@ -1,0 +1,53 @@
+{
+  "reg": "Registrace",
+  "clock_D": "DNY",
+  "clock_H": "HODINY",
+  "clock_M": "MINUTY",
+  "clock_S": "SEKUNDY",
+
+  "coToJe": "Co je to CWO?",
+  "coToJe_text": "Czech Weightlifting Open je v základu vzpěračskou soutěží národního až mezinárodního charakteru, již tradičně odehrávající se v Brně. Jedná se tedy o klasické klání jednotlivců z řad žen i mužů rozdělených do standartních hmotnostních kategorií dle pravidel IWF a ČSV. Specialitou CWO je také kategorie TEAM, kde každý tým je složen ze 4 členů (muži, ženy, kombinace). Vítáni jsou jednotlivci i týmy z řad začátečníků, pokročilých i zkušených závodníků nebo příznivci silových sportů všech věkových skupin.",
+
+  "categories": "Soutěžní kategorie",
+  "indiv_W": "Jednotlivci - ŽENY",
+  "indiv_W_text_1": "Kategorie jednotlivci ženy je určena pro ženy všech věkových kategorií.",
+  "indiv_W_text_2": "(pravidla vážení závodnic i závodníků najdete v sekci “Pravidla a soutěžní řád ČSV”)",
+  "indiv_W_text_3": "Minimální počet závodnic pro otevření dané hmotnostní skupiny je vždy 5. Při nižším počtu než 5 závodnic registrovaných do dané hmotnostní skupiny si pořadatel vyhrazuje právo sloučit hmotnostní skupiny dle předem stanovených počtů v nejbližších hmotnostních skupinách. Typicky pak směrem vzhůru v hierarchii hmotnostních skupin. Výsledné pořadí každé závodnice v rámci dané hmotnostní skupiny je určeno seřazením nejvyšších dosažených hodnot platného dvojboje v soutěži.",
+  "indiv_W_text_4": "Pravidla se vztahují na soutěž jednotlivců v rámci CWO i AMČR. Pro účast v soutěži v rámci CWO není nutné být členem ČSV, avšak pro soutěž v rámci AMČR je členství vyžadováno.",
+  "indiv_M": "Jednotlivci - MUŽI",
+  "indiv_M_text_1": "Kategorie jednotlivci muži je určena pro muže a chlapce každého věku, avšak s minimálním možným věkem závodníka 15 let dovršených v kalendářním roce konání soutěže.",
+  "indiv_M_text_2": "Tato kategorie je dle pravidel IWF a ČSV rozdělena do hmotnostních skupin závodníků odpovídající hmotnosti v den soutěže.",
+  "indiv_M_text_3": "Minimální počet závodníků pro otevření dané hmotnostní skupiny je vždy 5. Při nižším počtu než 5 závodníků registrovaných do dané hmotnostní skupiny si pořadatel vyhrazuje právo sloučit hmotnostní skupiny dle předem stanovených počtů v nejbližších hmotnostních skupinách.",
+  "indiv_M_text_4": "Výsledné pořadí každého závodníka v rámci dané hmotnostní skupiny je určeno seřazením nejvyšších dosažených hodnot platného dvojboje v soutěži.",
+  "team": "CWO Team OPEN",
+  "teamOpen_text_1": "Kategorie CWO Team OPEN je určena pro čtyřčlenné týmy ve variabilním složení:",
+  "teamOpen_text_2": "Tyto kombinace mohou být napříč všemi hmotnostními i věkovými skupinami. Výsledné pořadí všech týmů je určeno seřazením hodnot Sinclairových bodů týmů.",
+  "women": "ženy",
+  "woman": "žena",
+  "men": "muži",
+  "man": "muž",
+
+  "rules": "Pravidla a soutěžní řád ČSV",
+
+  "foto": "Fotogalerie ",
+  "sobota": "Sobota ",
+  "nedele": "Neděle ",
+
+  "kdyKde": "KDY A KDE?",
+  "kde1": "Fakulta sportovních studií",
+
+  "timeline": "Timeline",
+  "timeline_round1_dates": "01.10.2025 - 15.10.2025",
+  "timeline_round1_text": "1. kolo registrace: Jednotlivec 999 Kč, Tým 3 225 Kč",
+  "timeline_round2_dates": "16.10.2025 - 31.10.2025",
+  "timeline_round2_text": "2. kolo registrace: Jednotlivec 1 399 Kč, Tým 4 325 Kč",
+  "timeline_round3_dates": "1.11.2025 - 16.11.2025",
+  "timeline_round3_text": "3. kolo registrace: Jednotlivec 1 799 Kč, Tým 5 425 Kč",
+  "timeline_event_dates": "29.11.2025 - 30.11.2025",
+  "timeline_event_text": "Termín konání soutěže",
+
+  "terka": "Technická a výkonná ředitelka soutěže",
+  "martin": "Marketingový ředitel soutěže",
+
+  "domu": "Domů"
+}

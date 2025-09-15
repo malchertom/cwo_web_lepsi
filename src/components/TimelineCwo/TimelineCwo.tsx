@@ -1,21 +1,41 @@
-import './TimelineCwo.css'
+import './TimelineCwo.css';
 import Timeline from '@mui/lab/Timeline';
 import TimelineCwoItem from './TimelineCwoItem';
+import { useTranslation } from 'react-i18next';
+import type { i18n as I18nType } from 'i18next';
 
 function TimelineCwo() {
-    return(
-        <section className="timeline" id='timeline'>
-            <p className='headline'>Timeline</p>
-            <div className='timeline-tree'>
-            <Timeline>
-                <TimelineCwoItem leftItem={'01.10.2025 - 15.10.2025'} rightItem={'1. kolo registrace: Jednotlivec 999 Kč, Tým 3 225 Kč'} />
-                <TimelineCwoItem leftItem={'16.10.2025 - 31.10.2025'} rightItem={'2. kolo registrace: Jednotlivec 1 399 Kč, Tým 4 325 Kč'} />
-                <TimelineCwoItem leftItem={'1.11.2025 - 16.11.2025'} rightItem={'3. kolo registrace: Jednotlivec 1 799 Kč, Tým 5 425 Kč'} />
-                <TimelineCwoItem leftItem={'29.11.2025 - 30.11.2025'} rightItem={'Termín konání soutěže'} isLast/>
-            </Timeline>
-            </div>
-        </section>
-    );
+  const { t, i18n } = useTranslation() as {
+    t: (key: string) => string;
+    i18n: I18nType;
+  };
+
+  return (
+    <section className="timeline" id="timeline">
+      <p className='headline'>{t('timeline')}</p>
+      <div className='timeline-tree'>
+        <Timeline>
+          <TimelineCwoItem 
+            leftItem={t('timeline_round1_dates')} 
+            rightItem={t('timeline_round1_text')} 
+          />
+          <TimelineCwoItem 
+            leftItem={t('timeline_round2_dates')} 
+            rightItem={t('timeline_round2_text')} 
+          />
+          <TimelineCwoItem 
+            leftItem={t('timeline_round3_dates')} 
+            rightItem={t('timeline_round3_text')} 
+          />
+          <TimelineCwoItem 
+            leftItem={t('timeline_event_dates')} 
+            rightItem={t('timeline_event_text')} 
+            isLast 
+          />
+        </Timeline>
+      </div>
+    </section>
+  );
 }
 
 export default TimelineCwo;

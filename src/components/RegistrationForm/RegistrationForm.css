@@ -1,0 +1,176 @@
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.registration-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.switch-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.switch-buttons button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin: 0 5px;
+  background: #f5f5f5;
+  color: #000000;
+}
+
+.switch-buttons button.active {
+  background: #0077cc;
+  color: #000000;
+  font-weight: bold;
+}
+
+.team-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-details input{
+  width: 150%;
+  font-size: large;
+  padding: 6px;
+  margin-top: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.athletes-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.athletes-grid.individual {
+  grid-template-columns: 1fr;
+}
+
+.athletes-grid.team {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.athlete-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  border: 2px solid #000000;
+  border-radius: 0px;
+  padding: 15px;
+  transition: background 0.3s;
+  min-width: 250px;
+}
+
+/* Gender colors */
+.athlete-card.male {
+  background: #e6f3ff;
+}
+
+.athlete-card.female {
+  background: #ffe6f0;
+}
+
+.gender-switch {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.gender-switch button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  font-size: 20px;
+  cursor: pointer;
+  background: rgb(160, 160, 160);
+  color: #696969;
+}
+
+.gender-switch button.active {
+  border-color: #000000;
+  background: #ffffff;
+  color: #000000;
+}
+
+.athlete-card label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.athlete-card input,
+.athlete-card select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  margin-top: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-member,
+.submit-button,
+.remove-member {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.add-member {
+  background: #28a745;
+  color: white;
+}
+
+.remove-member {
+  background: #dc3545;
+  color: white;
+}
+
+.remove-member:hover {
+  background: #a71d2a;
+}
+
+.submit-button {
+  background: #0077cc;
+  color: white;
+}
+
+.submit-button:hover {
+  background: #005fa3;
+}
+
+.team-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}

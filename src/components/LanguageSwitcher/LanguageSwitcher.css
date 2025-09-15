@@ -1,0 +1,24 @@
+.language-switcher {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 20px;
+}
+
+.flag {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.flag.active {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.flag:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}

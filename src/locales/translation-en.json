@@ -1,0 +1,55 @@
+{
+  "reg": "Registration",
+  "clock_D": "DAYS",
+  "clock_H": "HOURS",
+  "clock_M": "MINUTES",
+  "clock_S": "SECONDS",
+
+  "coToJe": "What is CWO?",
+  "coToJe_text": "Czech Weightlifting Open is primarily a weightlifting competition of national to international caliber, traditionally held in Brno. It is a standard contest for individual competitors, both women and men, divided into standard weight categories according to IWF and ČSV rules. A special feature of the CWO is the TEAM category, where each team consists of 4 members (men, women, or mixed). Both individuals and teams are welcome, including beginners, advanced and experienced competitors, as well as strength sports enthusiasts of all age groups.",
+
+  "categories": "Competition Categories",
+  "indiv_W": "Individual - WOMEN",
+  "indiv_W_text_1": "The individual women category is intended for female athletes of all age groups.",
+  "indiv_W_text_2": "(Weight rules for female and male athletes can be found in the 'Rules and Competition Regulations ČSV' section.)",
+  "indiv_W_text_3": "The minimum number of athletes required to open a weight group is always 5. If fewer than 5 athletes are registered in a given weight group, the organizer reserves the right to merge weight groups according to pre-defined counts in adjacent groups, typically upwards in the hierarchy. The final ranking of each athlete in the group is determined by the highest valid total lifts achieved in the competition.",
+  "indiv_W_text_4": "These rules apply to individual competitions within CWO and AMČR. Membership in ČSV is not required for participation in CWO competitions, but is required for AMČR competitions.",
+  "indiv_M": "Individual - MEN",
+  "indiv_M_text_1": "The individual men category is intended for male athletes of all ages, with a minimum age of 15 in the calendar year of the competition.",
+  "indiv_M_text_2": "This category is divided according to IWF and ČSV rules into weight groups corresponding to the athlete's weight on the day of the competition.",
+  "indiv_M_text_3": "The minimum number of athletes required to open a weight group is always 5. If fewer than 5 athletes are registered in a given weight group, the organizer reserves the right to merge weight groups according to pre-defined counts in adjacent groups.",
+  "indiv_M_text_4": "The final ranking of each athlete in a weight group is determined by the highest valid total lifts achieved in the competition.",
+  "team": "CWO Team OPEN",
+  "teamOpen_text_1": "The CWO Team OPEN category is intended for four-member teams with variable composition:",
+  "teamOpen_text_2": "These combinations may occur across all weight and age groups. The final ranking of all teams is determined by summing the Sinclair points of the team members.",
+  "women": "women",
+  "woman": "woman",
+  "men": "men",
+  "man": "man",
+
+  "rules": "Rules and Competition Regulations ČSV",
+
+  "foto": "Photogallery ",
+  "sobota": "Saturday ",
+  "nedele": "Sunday ",
+
+  "kdyKde": "Where and When?",
+  "kde1": "Faculty of Sports Studies",
+
+  
+  "timeline": "Timeline",
+  "timeline_round1_dates": "01.10.2025 - 15.10.2025",
+  "timeline_round1_text": "1st round of registration: Individual 999 CZK, Team 3,225 CZK",
+  "timeline_round2_dates": "16.10.2025 - 31.10.2025",
+  "timeline_round2_text": "2nd round of registration: Individual 1,399 CZK, Team 4,325 CZK",
+  "timeline_round3_dates": "1.11.2025 - 16.11.2025",
+  "timeline_round3_text": "3rd round of registration: Individual 1,799 CZK, Team 5,425 CZK",
+  "timeline_event_dates": "29.11.2025 - 30.11.2025",
+  "timeline_event_text": "Competition Dates",
+
+  "terka": "Technical and Executive Director of the Competition",
+  "martin": "Marketing Director of the Competition",
+
+  "domu": "Home"
+
+}

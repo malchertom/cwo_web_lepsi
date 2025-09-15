@@ -1,0 +1,28 @@
+.forms {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(var(--section-padding) / 6) var(--section-padding);
+    gap: 24px;
+    
+    /*
+    color: #131313;
+    background-color: whitesmoke;
+    box-shadow: inset 0px 8px 16px -6px #000, inset 0px -8px 16px -6px #000;
+    */
+
+    
+    color: #131313;
+    background-color: var(--cwo-grey);
+
+    /*
+    background-color: #2B2B2B;
+    
+    */
+    box-shadow: inset 0px 8px 26px -6px #919191, 
+                inset 0px -8px 26px -6px #919191;
+    border: 3px solid black;
+    outline: 10px solid white;
+    margin: 12px;
+}

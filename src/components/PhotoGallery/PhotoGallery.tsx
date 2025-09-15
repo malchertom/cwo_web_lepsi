@@ -5,10 +5,17 @@ import { AnimatePresence } from 'framer-motion';
 import { motion } from "framer-motion"
 import photoDataSo from './photosSo.json';
 import photoDataNe from './photosNe.json';
+import { useTranslation } from 'react-i18next';
+import type { i18n as I18nType } from 'i18next';
 
 
 
 function PhotoGallery() {
+
+              const { t, i18n } = useTranslation() as {
+                t: (key: string) => string;
+                i18n: I18nType;
+              };
         const [selected, setSelected] = useState('sobota');
     
         const handleClick = (str:string) => {
@@ -45,18 +52,18 @@ function PhotoGallery() {
     return(    
         <section className='photogallery' id='photogallery'>
             <div className='photogallery-header'>
-                <p className='headline'>Fotogalerie 2024</p>  
+                <p className='headline'>{t('foto')}2024</p>  
             </div>
 
             <div className='gallery-select'>
                     <ul>
                         <li onClick={()=>handleClick('sobota')}
                             className={selected === 'sobota'? 'active' : ''}>
-                                Sobota - 21.12.
+                                {t('sobota')} - 21.12.
                         </li>
                         <li onClick={()=>handleClick('nedele')}
                             className={selected === 'nedele'? 'active' : ''}>
-                                Neděle - 22.12.
+                                {t('nedele')} - 22.12.
                         </li>
                     </ul>
                 </div>
