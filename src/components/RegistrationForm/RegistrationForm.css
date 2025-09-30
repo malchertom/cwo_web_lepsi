@@ -71,6 +71,7 @@
   border-radius: 0px;
   padding: 15px;
   transition: background 0.3s;
+  max-width: 100px;
   min-width: 250px;
 }
 
@@ -174,3 +175,24 @@
   gap: 10px;
   margin-top: 20px;
 }
+
+
+@media (max-width: 1366px) {
+
+.athletes-grid.team {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+  
+  }
+
+
+  @media only screen and (max-width: 1366px) {
+
+
+}    
+
+@media only screen and (max-width: 600px) {
+    
+
+  }
