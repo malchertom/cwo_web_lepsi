@@ -21,7 +21,7 @@ function App() {
     <div className='cwo'>
       <Navbar />
       <Banner />
-      
+      <RegistrationForm />
 
       <About />
       <Categories />
