@@ -26,7 +26,7 @@ function Banner() {
                 />
 
                 <button>
-                    <a href="https://is.muni.cz/obchod/fakulta/fsps/CWO_2025/" target="_blank" rel="noopener noreferrer">{t('reg')}</a>
+                    <a href="https://forms.gle/yiFWfUZqznK7H78h7" target="_blank" rel="noopener noreferrer">{t('reg')}</a>
                 </button>
             </div>
         </section>

@@ -1,4 +1,5 @@
 nav {
+    z-index: 100;
     position: fixed;
     width: calcv(ar(--section-padding) / 2);
     
