@@ -81,9 +81,11 @@ export const TeamOpen: React.FC = () => {
       <p>{t('teamOpen_text_1')}</p>
       <ul>
         <li>4 {t('women')}</li>
+        <li>3 {t('women')}</li>
         <li>3 {t('women')} + 1 {t('man')}</li>
         <li>2 {t('women')} + 2 {t('men')}</li>
         <li>1 {t('woman')} + 3 {t('men')}</li>
+        <li>3 {t('men')}</li>
         <li>4 {t('men')}</li>
       </ul>
       <p>{t('teamOpen_text_2')}</p>

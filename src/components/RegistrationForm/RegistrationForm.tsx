@@ -285,7 +285,7 @@ export default function RegistrationForm() {
             {errors[`phone_${index}`] && <p className="error-text">{errors[`phone_${index}`]}</p>}
 
             {/* Tričko */}
-            <label>Velikost trička</label>
+            <label>Velikost trička (unisex střih)</label>
             <select value={athlete.tshirtSize} onChange={(e) => handleAthleteChange(index, "tshirtSize", e.target.value)} className={errors[`tshirtSize_${index}`] ? "input-error" : ""}>
               <option value="">-- Vyberte velikost --</option>
               {tshirtSizes.map((s) => (<option key={s} value={s}>{s}</option>))}
