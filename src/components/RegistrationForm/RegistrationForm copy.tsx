@@ -17,8 +17,8 @@ type Athlete = {
   cwo: boolean;
 };
 
-const maleWeightClasses = ["-67kg", "-73kg", "-81kg", "-89kg", "-96kg", "-102kg", "-109kg", "+109kg"];
-const femaleWeightClasses = ["-49kg", "-55kg", "-59kg", "-64kg", "-71kg", "-76kg", "-81kg", "+87kg"];
+const maleWeightClasses = ["-55kg", "-61kg", "-67kg", "-73kg", "-81kg", "-89kg", "-96kg", "-102kg", "-109kg", "+109kg"];
+const femaleWeightClasses = ["-45kg","-49kg", "-55kg", "-59kg", "-64kg", "-71kg", "-76kg", "-81kg", "-87kg", "+87kg"];
 const tshirtSizes = ["XS", "S", "M", "L", "XL", "XXL"];
 const universities = ["UK Praha", "MUNI Brno", "VUT Brno", "ČVUT Praha"];
 

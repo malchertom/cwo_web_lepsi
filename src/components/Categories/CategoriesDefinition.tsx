@@ -18,14 +18,16 @@ export const SoloWomen: React.FC = () => {
     >
       <p>{t('indiv_W_text_1')}</p>
       <ol>
-        <li>48 kg</li>
-        <li>53 kg</li>
-        <li>58 kg</li>
-        <li>63 kg</li>
-        <li>69 kg</li>
-        <li>77 kg</li>
-        <li>86 kg</li>
-        <li>+ 86 kg</li>
+        <li>45 kg</li>
+        <li>49 kg</li>
+        <li>55 kg</li>
+        <li>59 kg</li>
+        <li>64 kg</li>
+        <li>71 kg</li>
+        <li>76 kg</li>
+        <li>81 kg</li>
+        <li>87 kg</li>
+        <li>+87 kg</li>
       </ol>
       <p>{t('indiv_W_text_2')}</p>
       <p>{t('indiv_W_text_3')}</p>
@@ -49,14 +51,16 @@ export const SoloMen: React.FC = () => {
     >
       <p>{t('indiv_M_text_1')}</p>
       <ol>
-        <li>60 kg</li>
-        <li>65 kg</li>
-        <li>71 kg</li>
-        <li>79 kg</li>
-        <li>88 kg</li>
-        <li>94 kg</li>
-        <li>110 kg</li>
-        <li>+ 110 kg</li>
+        <li>55 kg</li>
+        <li>61 kg</li>
+        <li>67 kg</li>
+        <li>73 kg</li>
+        <li>81 kg</li>
+        <li>89 kg</li>
+        <li>96 kg</li>
+        <li>102 kg</li>
+        <li>109 kg</li>
+        <li>+ 109 kg</li>
       </ol>
       <p>{t('indiv_M_text_2')}</p>
       <p>{t('indiv_M_text_3')}</p>
