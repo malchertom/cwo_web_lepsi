@@ -122,13 +122,13 @@ export default function RegistrationForm() {
     const newErrors: { [key: string]: string } = {};
 
     // Faktura
-    if (isTeam || athletes.some((a) => a.cwo)) {
-      if (!cisloFaktury.trim()) {
-        newErrors.cisloFaktury = "Číslo faktury je povinné.";
-      } else if (!/^\d{8}$/.test(cisloFaktury)) {
-        newErrors.cisloFaktury = "Číslo faktury musí mít přesně 8 číslic.";
-      }
-    }
+    if (isTeam || athletes.some((a) => a.cwo)) {
+      if (!cisloFaktury.trim()) {
+        newErrors.cisloFaktury = "Číslo faktury je povinné.";
+      } else if (!/^\d{8}$/.test(cisloFaktury)) {
+        newErrors.cisloFaktury = "Číslo faktury musí mít přesně 8 číslic.";
+      }
+    }
 
     if (isTeam && !teamName.trim()) {
       newErrors.teamName = "Zadejte název týmu.";
@@ -159,9 +159,14 @@ export default function RegistrationForm() {
   const handleSubmit = async () => {
     if (!validateBeforeSubmit()) return;
 
-    const payload = athletes.map((athlete) => {
-      const iso = toIsoDate(athlete.birthDate);
-      return {
+    const isFakturaRequired = isTeam || athletes.some((a) => a.cwo);
+    const fakturaValue = isFakturaRequired && cisloFaktury.trim() 
+      ? Number(cisloFaktury) // Předpokládáme, že validace v tuto chvíli již zajistila, že jde o 8 číslic.
+      : null; // Pokud faktura není required NEBO je required a prázdná (což by se mělo zachytit validací), pošleme null.
+
+    const payload = athletes.map((athlete) => {
+      const iso = toIsoDate(athlete.birthDate);
+      return {
         Jmeno: athlete.firstName,
         Prijmeni: athlete.lastName,
         Narozeni: iso,
@@ -175,7 +180,7 @@ export default function RegistrationForm() {
         competition_amcr: athlete.amcr,
         Tricko: athlete.tshirtSize,
         team_id: isTeam ? (teamName.trim() || null) : null,
-        Faktura: cisloFaktury
+        Faktura: fakturaValue
       };
     });
 
