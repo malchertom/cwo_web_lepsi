@@ -43,7 +43,8 @@ const universities = [
   { name: "Vysoké učení technické v Brně", code: "VUT" },
   { name: "Západočeská univerzita v Plzni", code: "ZČU" },
   { name: "Česká zemědělská univerzita v Praze", code: "ČZU" },
-  { name: "České vysoké učení technické v Praze", code: "ČVUT" }
+  { name: "České vysoké učení technické v Praze", code: "ČVUT" },
+  { name: "Vysoká škola tělesné výchovy a sportu Palestra, s.r.o., Praha ", code: "VŠTVS Palestra" }
 ];
 
 const emptyAthlete: Athlete = {
