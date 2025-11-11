@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // CategoriesDefinition.tsx
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
