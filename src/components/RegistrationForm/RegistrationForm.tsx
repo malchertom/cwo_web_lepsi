@@ -32,6 +32,7 @@ const universities = [
   { name: "Univerzita Hradec Králové", code: "UHK" },
   { name: "Univerzita Jana Evangelisty Purkyně v Ústí nad Labem", code: "UJEP" },
   { name: "Univerzita Karlova", code: "UK" },
+  { name: "Univerzita obrany", code: "UNOB" },
   { name: "Univerzita Palackého v Olomouci", code: "UP" },
   { name: "Univerzita Pardubice", code: "UPCE" },
   { name: "Univerzita Tomáše Bati ve Zlíně", code: "UTB" },
