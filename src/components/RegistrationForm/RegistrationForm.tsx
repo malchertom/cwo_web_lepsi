@@ -186,7 +186,7 @@ export default function RegistrationForm() {
       };
     });
 
-    const { data, error } = await supabase.from("athletes").insert(payload);
+    const { error } = await supabase.from("athletes").insert(payload);
 
     if (error) {
       alert("Chyba při ukládání: " + error.message);

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from 'react';
 import './Categories.css'
 import { SoloWomen, SoloMen, TeamOpen} from './CategoriesDefinition';

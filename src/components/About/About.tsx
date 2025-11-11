@@ -6,7 +6,7 @@ import type { i18n as I18nType } from 'i18next';
 
 function About() {
 
-      const { t, i18n } = useTranslation() as {
+      const { t } = useTranslation() as {
         t: (key: string) => string;
         i18n: I18nType;
       };

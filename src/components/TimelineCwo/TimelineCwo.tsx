@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import type { i18n as I18nType } from 'i18next';
 
 function TimelineCwo() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { t, i18n } = useTranslation() as {
     t: (key: string) => string;
     i18n: I18nType;
