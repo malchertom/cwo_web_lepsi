@@ -10,7 +10,7 @@ import Timeline from './components/TimelineCwo/TimelineCwo';
 import WebBy from './components/WebBy/WebBy';
 import PhotoGallery from './components/PhotoGallery/PhotoGallery';
 
-import RegistrationForm from './components/RegistrationForm/RegistrationForm';
+
 
 
 
@@ -21,7 +21,7 @@ function App() {
     <div className='cwo'>
       <Navbar />
       <Banner />
-      <RegistrationForm />
+      
 
       <About />
       <Categories />
