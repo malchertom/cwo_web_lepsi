@@ -27,7 +27,7 @@ function Banner() {
                 />
 
                 <button>
-                    <a href="https://forms.gle/yiFWfUZqznK7H78h7" target="_blank" rel="noopener noreferrer">{t('reg')}</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScIL-WN2wVpZNsXMXbvu86lyrlAFA_B7e21cWQ9K5JMPpj06g/viewform?usp=header" target="_blank" rel="noopener noreferrer">{t('reg')}</a>
                 </button>
             </div>
         </section>
