@@ -14,17 +14,17 @@ function Propozice() {
             </p>
             <p className="pravidla-download">
                 <a href="assets\pdfs\CWO2025-zeny.pdf" target="_blank">
-                    <FileDownloadOutlinedIcon /> <span>Předběžná startovní listina - ŽENY</span>
+                    <FileDownloadOutlinedIcon /> <span>Startovní listina - ŽENY</span>
                 </a>
             </p>
             <p className="pravidla-download">
                 <a href="assets\pdfs\CWO2025-muzi.pdf" target="_blank">
-                    <FileDownloadOutlinedIcon /> <span>Předběžná startovní listina - MUŽI</span>
+                    <FileDownloadOutlinedIcon /> <span>Startovní listina - MUŽI</span>
                 </a>
             </p>
             <p className="pravidla-download">
                 <a href="assets\pdfs\CWO2025-harmonogram.pdf" target="_blank">
-                    <FileDownloadOutlinedIcon /> <span>Předběžný harmonogram</span>
+                    <FileDownloadOutlinedIcon /> <span>Harmonogram</span>
                 </a>
             </p>
         </section>
