@@ -26,9 +26,6 @@ function Banner() {
                 labels={[t('clock_D'), t('clock_H'), t('clock_M'), t('clock_S')]}
                 />
 
-                <button>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScIL-WN2wVpZNsXMXbvu86lyrlAFA_B7e21cWQ9K5JMPpj06g/viewform?usp=header" target="_blank" rel="noopener noreferrer">{t('reg')}</a>
-                </button>
             </div>
         </section>
     );
