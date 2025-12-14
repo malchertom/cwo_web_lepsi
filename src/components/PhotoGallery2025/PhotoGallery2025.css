@@ -140,13 +140,16 @@
     font-size: 2rem;
   }
 
+  .categories-content {
+    width: 90%;
+  }
+
   .gallery-select-tabs ul {
     flex-direction: column;
     width: 100%;
   }
 
   .gallery-select-tabs li {
-    width: 100%;
     text-align: center;
   }
 }

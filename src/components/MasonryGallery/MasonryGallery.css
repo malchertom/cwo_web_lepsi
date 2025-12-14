@@ -117,6 +117,11 @@ nav:has(~ .overlay) {
   .close-button {
     display: none;
   }
+
+  .MasonryGallery [style*="flex-direction: column"] {
+  width: 100% !important;
+  flex: none !important;
+}
   
   .closebutton-m-container {
     display: flex;
