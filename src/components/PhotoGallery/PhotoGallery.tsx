@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from 'react';
 import './PhotoGallery.css';
-import MasonryGallery from '../MasonryGallery/MasonryGallery';
+import MasonryGallery from '../MasonryGallery/MasonryGallery_zPortfolia';
 import { AnimatePresence } from 'framer-motion';
 import { motion } from "framer-motion"
 import photoDataSo from './photosSo.json';

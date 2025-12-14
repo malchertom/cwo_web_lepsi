@@ -1,0 +1,128 @@
+{
+  "days": {
+    "sobota": {
+      "Michal_Stepanek": [
+        "15-17",
+        "17-19",
+        "19-21",
+        "21-23"
+      ],
+      "Tomas_Malcher": [
+        "09-11",
+        "11-13",
+        "13-15",
+        "15-17"
+      ]
+    },
+    "nedele": {
+      "Michal_Stepanek": [
+        "09-11",
+        "11-13",
+        "13-15",
+        "15-17",
+        "17-19",
+        "19-21",
+        "21-23"
+      ],
+      "Tomas_Malcher": [
+        "17-19",
+        "19-21",
+        "21-23"
+      ]
+    }
+  },
+  "schedule": {
+    "sobota": {
+      "date": "29.11.2025",
+      "label": "Sobota 29.11.2025",
+      "timeSlots": [
+        {
+          "start_hour": 7,
+          "end_hour": 9,
+          "label": "07:00-09:00"
+        },
+        {
+          "start_hour": 9,
+          "end_hour": 11,
+          "label": "09:00-11:00"
+        },
+        {
+          "start_hour": 11,
+          "end_hour": 13,
+          "label": "11:00-13:00"
+        },
+        {
+          "start_hour": 13,
+          "end_hour": 15,
+          "label": "13:00-15:00"
+        },
+        {
+          "start_hour": 15,
+          "end_hour": 17,
+          "label": "15:00-17:00"
+        },
+        {
+          "start_hour": 17,
+          "end_hour": 19,
+          "label": "17:00-19:00"
+        },
+        {
+          "start_hour": 19,
+          "end_hour": 21,
+          "label": "19:00-21:00"
+        },
+        {
+          "start_hour": 21,
+          "end_hour": 23,
+          "label": "21:00-23:00"
+        }
+      ]
+    },
+    "nedele": {
+      "date": "30.11.2025",
+      "label": "Neděle 30.11.2025",
+      "timeSlots": [
+        {
+          "start_hour": 7,
+          "end_hour": 9,
+          "label": "07:00-09:00"
+        },
+        {
+          "start_hour": 9,
+          "end_hour": 11,
+          "label": "09:00-11:00"
+        },
+        {
+          "start_hour": 11,
+          "end_hour": 13,
+          "label": "11:00-13:00"
+        },
+        {
+          "start_hour": 13,
+          "end_hour": 15,
+          "label": "13:00-15:00"
+        },
+        {
+          "start_hour": 15,
+          "end_hour": 17,
+          "label": "15:00-17:00"
+        },
+        {
+          "start_hour": 17,
+          "end_hour": 19,
+          "label": "17:00-19:00"
+        },
+        {
+          "start_hour": 19,
+          "end_hour": 21,
+          "label": "19:00-21:00"
+        },
+        {
+          "start_hour": 21,
+          "end_hour": 23,
+          "label": "21:00-23:00"
+        }
+      ]
+    }
+  }
+}

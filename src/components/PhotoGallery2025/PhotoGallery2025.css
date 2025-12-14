@@ -1,0 +1,158 @@
+.photogallery2025 {
+  width: 100%;
+  padding: 2rem 0;
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.photogallery2025-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gallery-controls {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.gallery-select-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.gallery-select-tabs ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-select-tabs li {
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #5a6c7d;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.gallery-select-tabs li:hover {
+  background: #f0f4f8;
+  color: #2c3e50;
+}
+
+.gallery-select-tabs li.active {
+  background: linear-gradient(135deg, #ffd000 0%, #e5ff00 100%);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.photographer-tabs {
+  margin-bottom: 1.5rem;
+}
+
+.category-tabs {
+  margin-bottom: 1.5rem;
+}
+
+.category-tabs li {
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.gallery-info {
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.gallery-info p {
+  margin: 0.25rem 0;
+  color: #5a6c7d;
+}
+
+.gallery-info .photographer-name {
+  font-weight: 600;
+  color: #000000;
+}
+
+.gallery-info .category-label {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.categories-content {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.gallery-wrap {
+  width: 100%;
+  max-height: 70vh;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #5a6c7d;
+}
+
+.no-photos-message {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+  color: #95a5a6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .photogallery2025-header .headline {
+    font-size: 2rem;
+  }
+
+  .gallery-select-tabs ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .gallery-select-tabs li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .photogallery2025-header .headline {
+    font-size: 1.75rem;
+  }
+
+  .gallery-select-tabs li {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .category-tabs li {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+  }
+}

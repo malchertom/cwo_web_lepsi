@@ -9,6 +9,7 @@ import PlaceTime from './components/PlaceTime/PlaceTime';
 import Timeline from './components/TimelineCwo/TimelineCwo';
 import WebBy from './components/WebBy/WebBy';
 import PhotoGallery from './components/PhotoGallery/PhotoGallery';
+import PhotoGallery2025 from './components/PhotoGallery2025/PhotoGallery2025';
 import Propozice from './components/Propozice/Propozice';
 
 
@@ -26,6 +27,7 @@ function App() {
       <Propozice />
       <About />
       <Categories />
+      <PhotoGallery2025 />
       <PhotoGallery />
       <PlaceTime />
       <Timeline />

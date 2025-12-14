@@ -1,5 +1,5 @@
 import './Startovky.css';
-import MasonryGallery from '../MasonryGallery/MasonryGallery';
+import MasonryGallery from '../MasonryGallery/MasonryGallery_zPortfolia';
 
 
 

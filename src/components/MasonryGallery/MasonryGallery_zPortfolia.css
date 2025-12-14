@@ -1,0 +1,157 @@
+
+
+.MasonryGallery {
+  width: 100%;
+  position: relative;
+}
+
+.masonry-gallery {
+  width: 100%;
+  column-count: 3;
+  column-gap: 8px;
+}
+
+.masonry-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  break-inside: avoid;
+  margin-bottom: 8px;
+}
+
+.masonry-image:hover {
+  --transform: scale(1.05);
+  box-shadow: 0.75rem 0.75rem 50px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  right: calc(50vw - 50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+  overflow-x: hidden !important;
+}
+
+.enlarged-container {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+.enlarged-image {
+  max-width: 95vw;
+  max-height: 95vh;
+  filter: drop-shadow(0.75rem 0.75rem 50px #777);
+}
+.close-button {
+  scale: 200%;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.close-button:hover {
+  scale: 200%;
+  color: rgba(53,145,255,1);
+}
+.close-button-m {
+  position: relative;
+  scale: 200%;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1100;
+  display: none;
+}
+
+.close-button-m:hover {
+  scale: 200%;
+  color: rgba(53,145,255,1);
+}
+
+.arrow-button {
+  scale: 250%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.arrow-button.left {
+  left: 20px;
+}
+
+.arrow-button.right {
+  right: 20px;
+}
+
+.arrow-button:hover {
+  scale: 250%;
+  color: rgba(53,145,255,1);
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .masonry-gallery {
+    column-count: 1;
+  }
+
+  .close-button {
+    display: none;
+  }
+  .closebutton-m-container{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .close-button-m {
+    display: block;
+  }
+  .arrow-button {
+    top: 65%;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .masonry-gallery {
+    column-count: 2;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .masonry-gallery {
+    column-count: 2;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .masonry-gallery {
+    column-count: 3;
+  }
+}

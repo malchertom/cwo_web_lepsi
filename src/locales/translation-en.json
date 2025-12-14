@@ -51,6 +51,8 @@
   "martin": "Marketing Director of the Competition",
   "tom": "Content and Design manager",
 
-  "domu": "Home"
+  "domu": "Home",
+  "loading": "Loading...",
+  "noPhotos": "No photos available"
 
 }

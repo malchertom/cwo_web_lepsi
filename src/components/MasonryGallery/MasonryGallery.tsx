@@ -1,46 +1,126 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Masonry from "react-responsive-masonry";
+import ArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import ArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+import CloseIcon from '@mui/icons-material/Close';
 import './MasonryGallery.css';
 
 type Photo = {
-  src: string; // Full image source
-  thumbnail: string; // Thumbnail image source
-  alt: string; // Alt text for both
+  src: string;
+  thumbnail: string;
+  alt: string;
 };
 
 type MasonryGalleryProps = {
+  toggleScrollLock?: (locked: boolean) => void;
   photos: Photo[];
 };
 
-const MasonryGallery: React.FC<MasonryGalleryProps> = ({ photos }) => {
-  const [enlargedPhoto, setEnlargedPhoto] = useState<Photo | null>(null);
+const MasonryGallery: React.FC<MasonryGalleryProps> = ({ photos, toggleScrollLock = () => {} }) => {
+  const [enlargedPhotoIndex, setEnlargedPhotoIndex] = useState<number | null>(null);
+  const [columns, setColumns] = useState(3);
 
-  const handleImageClick = (photo: Photo) => {
-    setEnlargedPhoto(photo);
+  // Responsive columns logic
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width <= 600) setColumns(1);
+      else if (width <= 900) setColumns(2);
+      else if (width <= 1400) setColumns(3);
+      else setColumns(4);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleImageClick = (index: number) => {
+    setEnlargedPhotoIndex(index);
+    toggleScrollLock(true);
   };
 
   const closeEnlargedPhoto = () => {
-    setEnlargedPhoto(null);
+    setEnlargedPhotoIndex(null);
+    toggleScrollLock(false);
+  };
+
+  const showNextPhoto = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    if (enlargedPhotoIndex !== null) {
+      setEnlargedPhotoIndex((enlargedPhotoIndex + 1) % photos.length);
+    }
+  };
+
+  const showPreviousPhoto = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    if (enlargedPhotoIndex !== null) {
+      setEnlargedPhotoIndex((enlargedPhotoIndex - 1 + photos.length) % photos.length);
+    }
+  };
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (enlargedPhotoIndex === null) return;
+      if (e.key === 'ArrowRight') showNextPhoto();
+      if (e.key === 'ArrowLeft') showPreviousPhoto();
+      if (e.key === 'Escape') closeEnlargedPhoto();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [enlargedPhotoIndex]);
+
+  // Path helper to fix ./assets paths from JSON
+  const getImagePath = (path: string) => {
+    if (!path) return '';
+    // Remove leading ./ if present to make it absolute relative to domain root
+    const cleanPath = path.startsWith('./') ? path.substring(1) : path;
+    // If using CRA with a subpath, prepend PUBLIC_URL
+    const publicUrl = process.env.PUBLIC_URL || '';
+    return cleanPath.startsWith('/') ? publicUrl + cleanPath : cleanPath;
   };
 
   return (
-    <div>
-      <div className="masonry-gallery">
-        {photos.map((photo, index) => (
-          <img 
-            src={photo.thumbnail} 
-            alt={photo.alt} 
-            className="masonry-image" 
-            key={index}
-            onClick={() => handleImageClick(photo)}
-          />
-        ))}
-      </div>
+    <div className="MasonryGallery">
+      <Masonry columnsCount={columns} gutter="10px">
+          {photos.map((photo, index) => (
+            <img
+              key={index}
+              src={getImagePath(photo.thumbnail)}
+              alt={photo.alt}
+              className="masonry-image"
+              style={{ width: "100%", display: "block", cursor: "pointer" }}
+              onClick={() => handleImageClick(index)}
+              loading="lazy"
+            />
+          ))}
+        </Masonry>
 
-      {enlargedPhoto && (
+      {enlargedPhotoIndex !== null && (
         <div className="overlay" onClick={closeEnlargedPhoto}>
-          <div className="enlarged-container">
-            <img src={enlargedPhoto.src} alt={enlargedPhoto.alt} className="enlarged-image" />
+          <button className="close-button" onClick={closeEnlargedPhoto}>
+            <CloseIcon />
+          </button>
+          
+          <button className="arrow-button left" onClick={showPreviousPhoto}>
+            <ArrowLeftIcon />
+          </button>
+
+          <div className="enlarged-container" onClick={(e) => e.stopPropagation()}>
+             <div className='closebutton-m-container'>
+                <button className="close-button-m" onClick={closeEnlargedPhoto}><CloseIcon /></button>
+             </div>
+            <img
+              src={getImagePath(photos[enlargedPhotoIndex].src)}
+              alt={photos[enlargedPhotoIndex].alt}
+              className="enlarged-image"
+            />
           </div>
+
+          <button className="arrow-button right" onClick={showNextPhoto}>
+            <ArrowRightIcon />
+          </button>
         </div>
       )}
     </div>

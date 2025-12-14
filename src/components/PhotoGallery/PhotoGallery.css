@@ -17,8 +17,10 @@
 }
 
 .gallery-wrap {
+  width: 100%;
   max-height: 65vh;
-  overflow: scroll;
+  overflow: auto;
+  box-sizing: border-box;
 }
 
 .gallery-select {
