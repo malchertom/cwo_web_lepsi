@@ -6,7 +6,7 @@ nav {
     
     background: rgb(19,19,19);
     background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(19,19,19,0) 100%);
-    
+    transition: z-index 0.3s ease;
     
     color: #363636;
 
@@ -16,6 +16,11 @@ nav {
     transition: all .2s linear;
 }
 
+/* Snížení navbar pod overlay */
+body.overlay-open nav {
+    z-index: 1 !important;
+}
+    
 nav:hover {
     font-size: .75vw;
     color: #131313;

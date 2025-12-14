@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import Masonry from "react-responsive-masonry";
 import ArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
@@ -38,11 +39,17 @@ const MasonryGallery: React.FC<MasonryGalleryProps> = ({ photos, toggleScrollLoc
   const handleImageClick = (index: number) => {
     setEnlargedPhotoIndex(index);
     toggleScrollLock(true);
+    // Zníž navbar pod overlay a zamkni scroll
+    document.body.classList.add('overlay-open');
+    document.body.style.overflow = 'hidden';
   };
 
   const closeEnlargedPhoto = () => {
     setEnlargedPhotoIndex(null);
     toggleScrollLock(false);
+    // Vrať navbar na původní úroveň a odemkni scroll
+    document.body.classList.remove('overlay-open');
+    document.body.style.overflow = 'auto';
   };
 
   const showNextPhoto = (e?: React.MouseEvent) => {
@@ -97,31 +104,34 @@ const MasonryGallery: React.FC<MasonryGalleryProps> = ({ photos, toggleScrollLoc
           ))}
         </Masonry>
 
-      {enlargedPhotoIndex !== null && (
-        <div className="overlay" onClick={closeEnlargedPhoto}>
-          <button className="close-button" onClick={closeEnlargedPhoto}>
-            <CloseIcon />
-          </button>
-          
-          <button className="arrow-button left" onClick={showPreviousPhoto}>
-            <ArrowLeftIcon />
-          </button>
+      {enlargedPhotoIndex !== null && createPortal(
+        (
+          <div className="overlay" onClick={closeEnlargedPhoto}>
+            <button className="close-button" onClick={closeEnlargedPhoto}>
+              <CloseIcon />
+            </button>
+            
+            <button className="arrow-button left" onClick={showPreviousPhoto}>
+              <ArrowLeftIcon />
+            </button>
 
-          <div className="enlarged-container" onClick={(e) => e.stopPropagation()}>
-             <div className='closebutton-m-container'>
+            <div className="enlarged-container" onClick={(e) => e.stopPropagation()}>
+              <div className='closebutton-m-container'>
                 <button className="close-button-m" onClick={closeEnlargedPhoto}><CloseIcon /></button>
-             </div>
-            <img
-              src={getImagePath(photos[enlargedPhotoIndex].src)}
-              alt={photos[enlargedPhotoIndex].alt}
-              className="enlarged-image"
-            />
-          </div>
+              </div>
+              <img
+                src={getImagePath(photos[enlargedPhotoIndex].src)}
+                alt={photos[enlargedPhotoIndex].alt}
+                className="enlarged-image"
+              />
+            </div>
 
-          <button className="arrow-button right" onClick={showNextPhoto}>
-            <ArrowRightIcon />
-          </button>
-        </div>
+            <button className="arrow-button right" onClick={showNextPhoto}>
+              <ArrowRightIcon />
+            </button>
+          </div>
+        ),
+        document.body
       )}
     </div>
   );
