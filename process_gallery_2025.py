@@ -273,6 +273,17 @@ def process_photos():
         photographer = get_photographer(exif_data, filename)
         photographer = photographer.replace(' ', '_').replace('/', '_')
         
+        # Filter by photographer if configured
+        if PHOTOGRAPHERS_TO_PROCESS is not None:
+            # Normalize photographer name variants
+            photographer_normalized = photographer.replace('Michal_Štěpánek', 'Michal_Stepanek')
+            photographer_normalized = photographer_normalized.replace('Tomáš_Malcher', 'Tomas_Malcher')
+            
+            # Check if photographer is in the allowed list
+            if photographer_normalized not in PHOTOGRAPHERS_TO_PROCESS:
+                skipped_count += 1
+                continue
+        
         # Get category (2-hour time slot)
         category = categorize_by_time(photo_datetime, day)
         
