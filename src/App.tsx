@@ -28,7 +28,6 @@ function App() {
       <About />
       <Categories />
       <PhotoGallery2025 />
-      <PhotoGallery />
       <PlaceTime />
       <Timeline />
 
