@@ -144,6 +144,7 @@ function PhotoGallery2025() {
       <div className="gallery-controls">
         {/* Year selection */}
         <div className="gallery-select-tabs year-tabs">
+          <p className="selector-label">Rok</p>
           <ul>
             <li
               onClick={() => setSelectedYear('2024')}
@@ -162,6 +163,7 @@ function PhotoGallery2025() {
 
         {/* Day selection */}
         <div className="gallery-select-tabs day-tabs">
+          <p className="selector-label">Den</p>
           <ul>
             <li
               onClick={() => setSelectedDay('sobota')}
@@ -181,6 +183,7 @@ function PhotoGallery2025() {
         {/* Photographer selection - only for 2025 */}
         {selectedYear === '2025' && availablePhotographers.length > 0 && (
           <div className="gallery-select-tabs photographer-tabs">
+            <p className="selector-label">Fotograf</p>
             <ul>
               {availablePhotographers.map((photographer) => (
                 <li
@@ -198,6 +201,7 @@ function PhotoGallery2025() {
         {/* Category selection - only for 2025 */}
         {selectedYear === '2025' && availableCategories.length > 0 && (
           <div className="gallery-select-tabs category-tabs">
+            <p className="selector-label">Čas</p>
             <ul>
               {availableCategories.map((timeSlot) => (
                 <li
@@ -212,20 +216,7 @@ function PhotoGallery2025() {
           </div>
         )}
 
-        {/* Gallery info - only for 2025 */}
-        {selectedYear === '2025' && selectedPhotographer && selectedCategory && (
-          <div className="gallery-info">
-            <p>
-              <span className="photographer-name">
-                {getPhotographerName(selectedPhotographer)}
-              </span>
-              {' - '}
-              <span className="category-label">
-                {getCategoryLabel(selectedCategory)}
-              </span>
-            </p>
-          </div>
-        )}
+
       </div>
 
       <div className="categories-content">

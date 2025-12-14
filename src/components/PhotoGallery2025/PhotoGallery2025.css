@@ -17,10 +17,20 @@
 
 .gallery-select-tabs {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+}
+
+.gallery-select-tabs .selector-label {
+  margin: 0;
+  padding: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #5a6c7d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .gallery-select-tabs ul {
