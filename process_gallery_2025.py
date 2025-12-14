@@ -35,6 +35,12 @@ OUTPUT_BASE = r"public\assets\gallery\2025"
 FULLSIZE_MAX_PIXELS = 4_000_000  # 4MP
 THUMBNAIL_LONG_EDGE = 720
 
+# Filter photographers - pouze zpracovat fotky od vybraných fotografů
+# None = zpracovat všechny fotografie
+# Příklad: ['Tomas_Malcher'] = pouze fotky od Tomáše Malchera
+# Příklad: ['Michal_Stepanek', 'Tomas_Malcher'] = pouze tyto dva fotografy
+PHOTOGRAPHERS_TO_PROCESS = None  # None = všichni, nebo list např. ['Tomas_Malcher']
+
 # Schedule definition - 2-hour time slots
 SCHEDULE = {
     "sobota": {
