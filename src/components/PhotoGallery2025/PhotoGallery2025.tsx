@@ -136,7 +136,7 @@ function PhotoGallery2025() {
   );
 
   return (
-    <section className="photogallery2025" id="photogallery2025">
+    <section className="photogallery2025" id="photogallery">
       <div className="photogallery2025-header">
         <p className="headline">{t('foto')}</p>
       </div>
