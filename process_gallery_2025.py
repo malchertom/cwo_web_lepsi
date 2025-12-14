@@ -39,7 +39,7 @@ THUMBNAIL_LONG_EDGE = 720
 # None = zpracovat všechny fotografie
 # Příklad: ['Tomas_Malcher'] = pouze fotky od Tomáše Malchera
 # Příklad: ['Michal_Stepanek', 'Tomas_Malcher'] = pouze tyto dva fotografy
-PHOTOGRAPHERS_TO_PROCESS = None  # None = všichni, nebo list např. ['Tomas_Malcher']
+PHOTOGRAPHERS_TO_PROCESS = ['Tomas_Malcher']  # None = všichni, nebo list např. ['Tomas_Malcher']
 
 # Schedule definition - 2-hour time slots
 SCHEDULE = {
